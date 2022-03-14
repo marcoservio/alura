@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\bin\Debug\netcoreapp3.1\05-ByteBank.exe
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\bin\Debug\netcoreapp3.1\05-ByteBank.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\bin\Debug\netcoreapp3.1\05-ByteBank.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\bin\Debug\netcoreapp3.1\05-ByteBank.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\bin\Debug\netcoreapp3.1\05-ByteBank.dll
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\bin\Debug\netcoreapp3.1\05-ByteBank.pdb
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\obj\Debug\netcoreapp3.1\05-ByteBank.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\obj\Debug\netcoreapp3.1\05-ByteBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\obj\Debug\netcoreapp3.1\05-ByteBank.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\obj\Debug\netcoreapp3.1\05-ByteBank.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\obj\Debug\netcoreapp3.1\05-ByteBank.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\obj\Debug\netcoreapp3.1\05-ByteBank.dll
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\obj\Debug\netcoreapp3.1\05-ByteBank.pdb
+C:\Users\marco\OneDrive\git-marcoservio\bytebank\05-ByteBank\obj\Debug\netcoreapp3.1\05-ByteBank.genruntimeconfig.cache
