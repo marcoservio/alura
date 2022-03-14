@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\bin\Debug\netcoreapp3.1\2-CriandoVariaveis.exe
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\bin\Debug\netcoreapp3.1\2-CriandoVariaveis.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\bin\Debug\netcoreapp3.1\2-CriandoVariaveis.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\bin\Debug\netcoreapp3.1\2-CriandoVariaveis.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\bin\Debug\netcoreapp3.1\2-CriandoVariaveis.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\bin\Debug\netcoreapp3.1\2-CriandoVariaveis.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\obj\Debug\netcoreapp3.1\2-CriandoVariaveis.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\obj\Debug\netcoreapp3.1\2-CriandoVariaveis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\obj\Debug\netcoreapp3.1\2-CriandoVariaveis.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\obj\Debug\netcoreapp3.1\2-CriandoVariaveis.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\obj\Debug\netcoreapp3.1\2-CriandoVariaveis.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\obj\Debug\netcoreapp3.1\2-CriandoVariaveis.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\obj\Debug\netcoreapp3.1\2-CriandoVariaveis.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\2-CriandoVariaveis\obj\Debug\netcoreapp3.1\2-CriandoVariaveis.genruntimeconfig.cache

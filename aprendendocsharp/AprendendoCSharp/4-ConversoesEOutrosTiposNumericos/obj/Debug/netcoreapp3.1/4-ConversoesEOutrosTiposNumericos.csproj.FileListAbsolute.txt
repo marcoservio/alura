@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\bin\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.exe
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\bin\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\bin\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\bin\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\bin\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\bin\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\netcoreapp3.1\4-ConversoesEOutrosTiposNumericos.genruntimeconfig.cache

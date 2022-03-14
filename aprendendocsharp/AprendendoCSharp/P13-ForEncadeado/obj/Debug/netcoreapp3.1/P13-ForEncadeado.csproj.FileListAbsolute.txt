@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\bin\Debug\netcoreapp3.1\P13-ForEncadeado.exe
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\bin\Debug\netcoreapp3.1\P13-ForEncadeado.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\bin\Debug\netcoreapp3.1\P13-ForEncadeado.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\bin\Debug\netcoreapp3.1\P13-ForEncadeado.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\bin\Debug\netcoreapp3.1\P13-ForEncadeado.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\bin\Debug\netcoreapp3.1\P13-ForEncadeado.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\obj\Debug\netcoreapp3.1\P13-ForEncadeado.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\obj\Debug\netcoreapp3.1\P13-ForEncadeado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\obj\Debug\netcoreapp3.1\P13-ForEncadeado.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\obj\Debug\netcoreapp3.1\P13-ForEncadeado.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\obj\Debug\netcoreapp3.1\P13-ForEncadeado.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\obj\Debug\netcoreapp3.1\P13-ForEncadeado.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\obj\Debug\netcoreapp3.1\P13-ForEncadeado.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P13-ForEncadeado\obj\Debug\netcoreapp3.1\P13-ForEncadeado.genruntimeconfig.cache

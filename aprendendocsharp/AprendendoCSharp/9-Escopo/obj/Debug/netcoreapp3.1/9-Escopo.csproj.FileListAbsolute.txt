@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\bin\Debug\netcoreapp3.1\9-Escopo.exe
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\bin\Debug\netcoreapp3.1\9-Escopo.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\bin\Debug\netcoreapp3.1\9-Escopo.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\bin\Debug\netcoreapp3.1\9-Escopo.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\bin\Debug\netcoreapp3.1\9-Escopo.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\bin\Debug\netcoreapp3.1\9-Escopo.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\obj\Debug\netcoreapp3.1\9-Escopo.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\obj\Debug\netcoreapp3.1\9-Escopo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\obj\Debug\netcoreapp3.1\9-Escopo.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\obj\Debug\netcoreapp3.1\9-Escopo.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\obj\Debug\netcoreapp3.1\9-Escopo.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\obj\Debug\netcoreapp3.1\9-Escopo.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\obj\Debug\netcoreapp3.1\9-Escopo.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\9-Escopo\obj\Debug\netcoreapp3.1\9-Escopo.genruntimeconfig.cache

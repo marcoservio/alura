@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\bin\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.exe
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\bin\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\bin\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\bin\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\bin\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\bin\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\obj\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\obj\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\obj\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\obj\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\obj\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\obj\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\obj\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P12-CalculaInvestimentoLongoPrazo\obj\Debug\netcoreapp3.1\P12-CalculaInvestimentoLongoPrazo.genruntimeconfig.cache
