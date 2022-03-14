@@ -1,0 +1,73 @@
+<meta charset="UTF-8">
+<script>
+    function PulaLinha(){
+        document.write("<br><br>");
+    }
+
+    function Mostra(mensagem){
+        document.write(mensagem);
+        PulaLinha();
+    }
+
+    function ExibeLinha(){
+        PulaLinha();
+        document.write("---------------------------------------------");
+        PulaLinha();
+    }
+
+    function ExibeLinhaSemPulaLinhaI(){
+        document.write("---------------------------------------------");
+        PulaLinha();
+    }
+
+    var ano = 2022;
+    var idadeFlavio = 39;
+    var idadeMarco = 20;
+    var idadeRafael = 41;
+    var media = (idadeFlavio + idadeMarco + idadeRafael) / 3;
+
+    //document.write("<h1>Seja bem-vindo</h1>")
+    Mostra("<h1>Seja bem-vindo</h1>")
+    document.write("A média das idades é: ");
+    document.write((20 + 10 + 30) / 3);
+    
+    ExibeLinha();
+    
+    document.write("A soma das idades é: " + ((20 + 10 + 30) / 3));
+    document.write("<br>");
+    document.write("Flavio tem: " + (ano - 1997) + " anos");
+    document.write("<br>")
+    document.write("Marco tem: " + (ano - 1999) + " anos" + "<br>");
+
+    ano = 2023
+
+    document.write("Rafael nasceu em: " + (ano - 40) + "<br>");
+    document.write("Marco" + " Sérvio");
+    document.write("<br>");
+    document.write("Eu acertei " + ((15 / 50) * 100) + "%");
+    
+    ExibeLinha();
+
+    document.write("A media das idades é: " + Math.round(media) + "<br>");
+
+    var nome = "Marco";
+
+    document.write("A idade de " + nome + " é " + idadeMarco);
+
+    ExibeLinha();
+
+    document.write("A soma das idades é: " + ((20 + 10 + 30) / 3));
+    PulaLinha();
+    document.write("Flavio tem: " + (ano - 1997) + " anos");
+    PulaLinha();
+    document.write("Marco tem: " + (ano - 1999) + " anos");
+
+    ExibeLinha();
+
+    Mostra("Olá pessoal");
+    Mostra("A soma das idades é: " + ((20 + 10 + 30) / 3))
+
+    ExibeLinhaSemPulaLinhaI();
+
+    
+</script>

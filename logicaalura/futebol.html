@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+    function PulaLinha(){
+        document.write("<br><br>");
+    }
+
+    function Mosta(mensagem){
+        document.write(mensagem);
+        PulaLinha();
+    }
+
+    var vitorias = parseInt(prompt("Entre com o numero de vitorias."));
+    var empates = parseInt(prompt("Entre com o numero de empates."));
+    var pontos = vitorias * 3 + empates;
+
+    Mosta("Os pontos do seu time é " + pontos);
+
+    if(pontos > 28){
+        Mosta("Seu time está melhor do que o ano passado");
+    }
+    if(pontos < 28){
+        Mosta("Seu time esta pior do que no ano passado");
+    }
+    if(pontos == 28){
+        Mosta("Seu time esta igual do ano passado");
+    }
+
+    Mosta("FIM");
+</script>

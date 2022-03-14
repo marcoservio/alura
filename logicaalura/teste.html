@@ -1,0 +1,119 @@
+<meta charset="UTF-8">
+<h3>Alcool ou Gasolina</h3>
+<script>
+    function Mostra(mensagem){
+        document.write("<big>" + mensagem + "</big>");
+        PulaLinha();
+    }
+    function PulaLinha(){
+        //document.write("<br><hr><br>");
+        document.write("<br><br>")
+    }
+    function ExibeLinha(){
+        document.write("-------------------------------------------------------");
+        PulaLinha();
+    }
+
+    var tanque = 40;
+    var caminhoComGasolina = 480;
+    var caminhoComAlcool = 300;
+    var consumoDeGasolina = caminhoComGasolina / tanque;
+    var consumoDeAlcool = caminhoComAlcool / tanque;
+    
+    var minhaIdade = 24;
+    var idadeAmigo = 19;
+    
+    var anoInicial = 1500;
+    var anoAtual = 2022;
+    var idadeMediaQuandoTemFilho = 28
+    var geracao = (anoAtual - anoInicial) / idadeMediaQuandoTemFilho;
+
+    document.write("Com um tanque de " + tanque + " litros, rodando " + caminhoComGasolina + 
+    "km você fez " + consumoDeGasolina + " km/L de gasolina.");
+    PulaLinha();
+    document.write("Com um tanque de " + tanque + " litros, rodando " + caminhoComAlcool + 
+    "km você fez " + consumoDeAlcool + " km/L de alcool.");
+    PulaLinha();
+    
+    ExibeLinha();
+
+    Mostra("Nossa difereça de idade é " + (minhaIdade - idadeAmigo));
+
+    ExibeLinha();
+
+    Mostra("Passaram " + Math.round(geracao) + " gerações");
+
+    ExibeLinha();
+
+    //var idade = parseInt(prompt("Qual é sua idade"));
+    //var temCarteira = prompt("Tem Carteira? Responda S ou N");
+
+    //if(idade >= 18 && temCarteira == "S"){
+    //    Mostra("Pode dirigir");
+    //}
+    //else{
+    //    Mostra("Não pode dirigir")
+    //}
+
+    //var loginCadastrado = "alura";
+    //var senhaCadastrada = "alura321";
+    //var tentativaAtual = 1;
+    //var tentativaMaxima = 4;
+
+    //while(tentativaAtual <= tentativaMaxima){
+    //    var loginInformado = prompt("Informe seu login");
+    //    var senhaInformada = prompt("Informe sua senha");
+
+    //    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ){
+    //        alert("Bem-vindo ao sistema " + loginInformado);
+    //        tentativaAtual = tentativaMaxima;
+    //    } 
+    //   else{
+    //        if(tentativaAtual == tentativaMaxima){
+    //            alert("Numero permitido de tentativas ultrapassado");
+    //        }
+    //        else{
+    //            alert("Login inválido. Tente novamente");
+    //        }            
+    //    }
+    //
+    //    tentativaAtual++;
+    //}
+
+    var parcelas = [10.40, 40.00, 100.18, 200];
+    for(i = 0; i < parcelas.length; i++) {
+        document.write(parcelas[i], ", ");
+    }
+
+    document.write("FIM");
+
+    ExibeLinha();
+
+    var ingredientes = [];
+
+    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+
+    var contador = 1;
+
+    while( contador <= quantidade) {
+
+        var ingrediente = prompt("Informe o ingrediente " + contador);
+        var achou = false;
+
+        for(var i = 0; i < ingredientes.length; i++){
+            if(ingredientes[i] == ingrediente){
+                achou = true;
+
+                break;
+            }
+        }
+
+        if(achou = false){
+            ingredientes.push(ingrediente);
+
+            contador++;
+        }
+    }
+
+    console.log(ingredientes);
+</script>
