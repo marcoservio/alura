@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "OomHjOxdMnYqwLYbSKn1zk1VGcapOgJIq1MSsgVJEwjLq3Kx6BFEX7Xgnh7c/OI9wxLOY0Ly0/UUrthB1D9RQg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marco\\OneDrive\\git-marcoservio\\alura\\ByteBankSA\\ByteBank.SistemaAgencia\\ByteBank.SistemaAgencia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marco\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\humanizer.core.pt\\2.14.1\\humanizer.core.pt.2.14.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marco\\OneDrive\\git-marcoservio\\bytebank\\06-ByteBank\\06-ByteBank.csproj": {}
+    "C:\\Users\\marco\\OneDrive\\git-marcoservio\\alura\\bytebank\\06-ByteBank\\06-ByteBank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marco\\OneDrive\\git-marcoservio\\bytebank\\06-ByteBank\\06-ByteBank.csproj": {
+    "C:\\Users\\marco\\OneDrive\\git-marcoservio\\alura\\bytebank\\06-ByteBank\\06-ByteBank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marco\\OneDrive\\git-marcoservio\\bytebank\\06-ByteBank\\06-ByteBank.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\OneDrive\\git-marcoservio\\alura\\bytebank\\06-ByteBank\\06-ByteBank.csproj",
         "projectName": "06-ByteBank",
-        "projectPath": "C:\\Users\\marco\\OneDrive\\git-marcoservio\\bytebank\\06-ByteBank\\06-ByteBank.csproj",
+        "projectPath": "C:\\Users\\marco\\OneDrive\\git-marcoservio\\alura\\bytebank\\06-ByteBank\\06-ByteBank.csproj",
         "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marco\\OneDrive\\git-marcoservio\\bytebank\\06-ByteBank\\obj\\",
+        "outputPath": "C:\\Users\\marco\\OneDrive\\git-marcoservio\\alura\\bytebank\\06-ByteBank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
