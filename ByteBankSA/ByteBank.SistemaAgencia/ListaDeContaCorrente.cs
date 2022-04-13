@@ -22,6 +22,31 @@ namespace ByteBank.SistemaAgencia
 
         }
 
+        public void Remover(ContaCorrente item)
+        {
+            int indiceItem = -1;
+
+            for(int i = 0; i < _proximaPosicao; i++)
+            {
+                if(_itens[i].Equals(item))
+                {
+                    indiceItem = i;
+
+                    break;
+                }
+            }
+            if(indiceItem != -1)
+            {
+                for(int i = indiceItem; i < _proximaPosicao - 1; i++)
+                {
+                    _itens[i] = _itens[i + 1];
+                }
+            }
+
+            _proximaPosicao--;
+            _itens[_proximaPosicao] = null;
+        }
+
         public void Adicionar(ContaCorrente item)
         {
             VerificarCapacidade(_proximaPosicao + 1);
@@ -31,6 +56,16 @@ namespace ByteBank.SistemaAgencia
             _itens[_proximaPosicao] = item;
 
             _proximaPosicao++;
+        }
+
+        public void EscreverListaNaTela()
+        {
+            for(int i = 0; i < _proximaPosicao; i++)
+            {
+                ContaCorrente conta = _itens[i];
+
+                Console.WriteLine($"Conta no indice {i} numero {conta.Agencia} {conta.Numero}");
+            }
         }
 
         private void VerificarCapacidade(int tamanhoNecessario)
@@ -61,6 +96,19 @@ namespace ByteBank.SistemaAgencia
             }
 
             _itens = novoArray;
+        }
+
+        public void SomarNumeros(int[] numeros)
+        {
+            for(int i = 0; i < numeros.Length - 1; i += 2)
+            {
+                int primeiroNumero = numeros[i];
+                int segundoNumero = numeros[i + 1];
+
+                int soma = primeiroNumero + segundoNumero;
+
+                Console.WriteLine($"{primeiroNumero}+{segundoNumero} = {soma}");
+            }
         }
     }
 }

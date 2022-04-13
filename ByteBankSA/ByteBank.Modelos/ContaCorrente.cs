@@ -9,20 +9,39 @@ namespace ByteBank.Modelos
     /// </summary>
     public class ContaCorrente
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public int ContadorSaquesNaoPermitidos { get; private set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public int ContadorTranferenciaNaoPermitidas { get; private set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static double TaxaOperacao { get; private set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public Cliente Titular { get; set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static int TotalDeContasCriadas { get; private set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public int Agencia { get; }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public int Numero { get; }
 
         private double _saldo = 100;
+        /// <summary>
+        /// 
+        /// </summary>
         public double Saldo
         {
             get
@@ -86,11 +105,22 @@ namespace ByteBank.Modelos
             _saldo -= valor;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="valor"></param>
         public void Depositar(double valor)
         {
             _saldo += valor;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="valor"></param>
+        /// <param name="contaDestino"></param>
+        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="OperacaoFinanceiraException"></exception>
         public void Transferir(double valor, ContaCorrente contaDestino)
         {
             if(valor < 0)
@@ -111,10 +141,45 @@ namespace ByteBank.Modelos
             contaDestino.Depositar(valor);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"Número {Numero}, Agência {Agencia}, Saldo {Saldo}";
             //return "Número: " + Numero + ", Agência: " + Agencia + ", Saldo: " + Saldo;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            ContaCorrente outraConta = obj as ContaCorrente;
+
+            if(outraConta == null)
+            {
+                return false;
+            }
+
+            if(Numero == outraConta.Numero && Agencia == outraConta.Agencia)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }

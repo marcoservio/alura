@@ -16,7 +16,7 @@ namespace ByteBank.SistemaAgencia
 
             lista.MeuMetodo(numero: 10);
 
-            ContaCorrente contaDoGui = new ContaCorrente(465, 8795147);
+            ContaCorrente contaDoGui = new ContaCorrente(111, 11111111);
             lista.Adicionar(contaDoGui);
 
             lista.Adicionar(new ContaCorrente(874, 46546846));
@@ -34,9 +34,30 @@ namespace ByteBank.SistemaAgencia
             lista.Adicionar(new ContaCorrente(874, 46546846));
             lista.Adicionar(new ContaCorrente(874, 46546846));
 
+            lista.EscreverListaNaTela();
+
             lista.Remover(contaDoGui);
 
+            Console.WriteLine("Apos remover o item");
+
+            lista.EscreverListaNaTela();
+
             Console.ReadLine();
+        }
+
+        static void SomaNumerosTeste()
+        {
+            ListaDeContaCorrente teste = new ListaDeContaCorrente();
+
+            int[] m = new int[5];
+
+            m[0] = 1;
+            m[1] = 2;
+            m[2] = 3;
+            m[3] = 4;
+            m[4] = 5;
+
+            teste.SomarNumeros(m);
         }
 
         static void TestaArrayContaCorrente()

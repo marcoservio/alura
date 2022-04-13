@@ -5,8 +5,17 @@ using System.Text;
 
 namespace ByteBank.Modelos.Sistemas
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class SistemaInterno
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="funcionario"></param>
+        /// <param name="senha"></param>
+        /// <returns></returns>
         public bool Logar(IAutenticavel funcionario, string senha)
         {
             bool usuarioAutenticado = funcionario.Autenticar(senha);

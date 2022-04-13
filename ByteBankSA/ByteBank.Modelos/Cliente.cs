@@ -4,10 +4,22 @@ using System.Text;
 
 namespace ByteBank.Modelos
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Cliente
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public string _cpf;
+        /// <summary>
+        /// 
+        /// </summary>
         public string Nome { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string Cpf
         {
             get
@@ -20,8 +32,16 @@ namespace ByteBank.Modelos
                 _cpf = value;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public string Profissao { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object obj)
         {
             //Cliente outroCliente = (Cliente)obj;
@@ -34,6 +54,15 @@ namespace ByteBank.Modelos
 
             //return Nome == outroCliente.Nome && Cpf == outroCliente.Cpf && Profissao == outroCliente.Profissao;
             return Cpf == outroCliente.Cpf;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }
