@@ -6,11 +6,11 @@ using System.Text;
 
 namespace ByteBank.SistemaAgencia
 {
-    public class ListaDeContaCorrente
+    public class ListaDeObject
     {
-        private ContaCorrente[] _itens;
+        private Object[] _itens;
         private int _proximaPosicao;
-        public int Tamanho 
+        public int Tamanho
         {
             get
             {
@@ -18,9 +18,9 @@ namespace ByteBank.SistemaAgencia
             }
         }
 
-        public ListaDeContaCorrente(int capacidadeInicial = 5)
+        public ListaDeObject(int capacidadeInicial = 5)
         {
-            _itens = new ContaCorrente[capacidadeInicial];
+            _itens = new Object[capacidadeInicial];
             _proximaPosicao = 0;
         }
 
@@ -29,15 +29,15 @@ namespace ByteBank.SistemaAgencia
 
         }
 
-        public void AdicionarVarios(params ContaCorrente[] itens)
+        public void AdicionarVarios(params Object[] itens)
         {
-            foreach(ContaCorrente conta in itens)
+            foreach(Object conta in itens)
             {
                 Adicionar(conta);
             }
         }
 
-        public void Remover(ContaCorrente item)
+        public void Remover(Object item)
         {
             int indiceItem = -1;
 
@@ -62,7 +62,7 @@ namespace ByteBank.SistemaAgencia
             _itens[_proximaPosicao] = null;
         }
 
-        public void Adicionar(ContaCorrente item)
+        public void Adicionar(Object item)
         {
             VerificarCapacidade(_proximaPosicao + 1);
 
@@ -73,7 +73,7 @@ namespace ByteBank.SistemaAgencia
             _proximaPosicao++;
         }
 
-        public ContaCorrente GetItemNoIndice(int indice)
+        public Object GetItemNoIndice(int indice)
         {
             if(indice < 0 || indice >= _proximaPosicao)
             {
@@ -99,7 +99,7 @@ namespace ByteBank.SistemaAgencia
 
             //Console.WriteLine("Aumentando capacidade da lista");
 
-            ContaCorrente[] novoArray = new ContaCorrente[novoTamanho];
+            Object[] novoArray = new Object[novoTamanho];
 
             //Array.Copy(sourceArray: _itens, sourceIndex: 4, destinationArray: novoArray, destinationIndex: 2, length: 3);
 
@@ -126,7 +126,7 @@ namespace ByteBank.SistemaAgencia
             }
         }
 
-        public ContaCorrente this[string texto]
+        public Object this[string texto]
         {
             get
             {
@@ -134,7 +134,7 @@ namespace ByteBank.SistemaAgencia
             }
         }
 
-        public ContaCorrente this[int indice]
+        public Object this[int indice]
         {
             get
             {
