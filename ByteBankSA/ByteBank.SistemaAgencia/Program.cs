@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
+
 using ByteBank.Modelos;
 using ByteBank.Modelos.Funcionarios;
+using ByteBank.SistemaAgencia.Comparadores;
 using ByteBank.SistemaAgencia.Extensoes;
+
 using Humanizer;
 
 namespace ByteBank.SistemaAgencia
@@ -12,7 +16,55 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            List<int> idades = new List<int>();
+            var contas = new List<ContaCorrente>()
+            {
+                new ContaCorrente(341, 1),
+                new ContaCorrente(342, 999),
+                null,
+                new ContaCorrente(342, 4),
+                new ContaCorrente(342, 465),
+                new ContaCorrente(340, 10),
+                null,
+                null,
+                new ContaCorrente(290, 290)
+            };
+
+            //contas.Sort(); -> Chama a implementação dada em IComparable
+
+            //contas.Sort(new ComparadorContaCorrentePorAgencia());
+
+            var contasOrdenadas = contas
+                .Where(conta => conta != null)
+                .OrderBy(conta => conta.Numero);
+
+            foreach(var conta in contasOrdenadas)
+            {
+                Console.WriteLine($"Conta número {conta.Numero}, agencia {conta.Agencia}");
+            }
+
+            Console.ReadLine();
+        }
+
+        static void TestaSort()
+        {
+            var nomes = new List<string>()
+            {
+                "Welington",
+                "Guilherme",
+                "Luana",
+                "Juana",
+                "Ana",
+                "Marco"
+            };
+
+            nomes.Sort();
+
+            foreach(var nome in nomes)
+            {
+                Console.WriteLine(nome);
+            }
+
+            var idades = new List<int>();
 
             idades.Add(1);
             idades.Add(5);
@@ -26,12 +78,22 @@ namespace ByteBank.SistemaAgencia
 
             idades.Remove(5);
 
+            idades.AdicionarVarios(99, -1);
+
+            idades.Sort();
+
             for(int i = 0; i < idades.Count; i++)
             {
                 Console.WriteLine(idades[i]);
             }
+        }
 
-            Console.ReadLine();
+        static void TestaVar()
+        {
+            var resultado = SomarVarios(1, 5, 9);
+            var conta = new ContaCorrente(312, 3123123);
+            var gerenciador = new GerenciadorBonificacao();
+            var gerenciadores = new List<GerenciadorBonificacao>();
         }
 
         static void TestaSomarVarios()
