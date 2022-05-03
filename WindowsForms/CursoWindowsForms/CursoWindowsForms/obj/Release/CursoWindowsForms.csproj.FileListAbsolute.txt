@@ -1,0 +1,17 @@
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\bin\Release\CursoWindowsForms.exe.config
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\bin\Release\CursoWindowsForms.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\bin\Release\CursoWindowsForms.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.csproj.SuggestedBindingRedirects.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.frm_DemonstracaoKey.resources
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.frm_HelloWorld.resources
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.frm_Mascara.resources
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.frm_Principal.resources
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.frm_ValidaCPF.resources
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.frm_ValidaCPF2.resources
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.frm_ValidaSenha.resources
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.Properties.Resources.resources
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.csproj.GenerateResource.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsForms\obj\Release\CursoWindowsForms.pdb
