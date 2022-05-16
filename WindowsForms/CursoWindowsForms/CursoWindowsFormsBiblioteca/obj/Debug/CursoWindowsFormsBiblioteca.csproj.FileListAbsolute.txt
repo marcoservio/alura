@@ -1,0 +1,12 @@
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Newtonsoft.Json.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Newtonsoft.Json.xml
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.CopyComplete
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Databases\Fichario.mdf
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Databases\Fichario_log.ldf
+C:\Users\marco\OneDrive\git-marcoservio\alura\WindowsForms\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.dll.config
