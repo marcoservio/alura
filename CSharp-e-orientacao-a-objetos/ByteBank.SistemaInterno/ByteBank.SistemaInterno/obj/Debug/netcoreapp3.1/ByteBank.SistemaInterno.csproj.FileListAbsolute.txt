@@ -1,0 +1,16 @@
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\netcoreapp3.1\ByteBank.SistemaInterno.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\netcoreapp3.1\ByteBank.SistemaInterno.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\netcoreapp3.1\ByteBank.SistemaInterno.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\netcoreapp3.1\ByteBank.SistemaInterno.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\netcoreapp3.1\ByteBank.SistemaInterno.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\netcoreapp3.1\ByteBank.SistemaInterno.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\netcoreapp3.1\ByteBank.Modelos.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\netcoreapp3.1\ByteBank.SistemaInterno.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\netcoreapp3.1\ByteBank.SistemaInterno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\netcoreapp3.1\ByteBank.SistemaInterno.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\netcoreapp3.1\ByteBank.SistemaInterno.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\netcoreapp3.1\ByteBank.SistemaInterno.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\netcoreapp3.1\ByteBank.SistemaInterno.csproj.CopyComplete
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\netcoreapp3.1\ByteBank.SistemaInterno.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\netcoreapp3.1\ByteBank.SistemaInterno.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\netcoreapp3.1\ByteBank.SistemaInterno.genruntimeconfig.cache

@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\bin\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.exe
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\bin\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\bin\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\bin\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\bin\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\bin\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\obj\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\obj\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\obj\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\obj\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\obj\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\obj\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\obj\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\6-AtribuicoesDeVariaveis\obj\Debug\netcoreapp3.1\6-AtribuicoesDeVariaveis.genruntimeconfig.cache

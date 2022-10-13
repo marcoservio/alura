@@ -1,0 +1,13 @@
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\bin\Debug\cidades.csv
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\bin\Debug\filmes.csv
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\bin\Debug\clientes.csv
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\bin\Debug\csharp7.exe.config
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\bin\Debug\csharp7.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\bin\Debug\csharp7.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\bin\Debug\System.ValueTuple.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\bin\Debug\System.ValueTuple.xml
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\obj\Debug\csharp7.csprojAssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\obj\Debug\csharp7.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\obj\Debug\csharp7.csproj.CopyComplete
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\obj\Debug\csharp7.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7\csharp7\obj\Debug\csharp7.pdb

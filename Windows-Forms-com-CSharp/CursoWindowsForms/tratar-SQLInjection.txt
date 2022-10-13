@@ -1,0 +1,28 @@
+public void ExpurgaApostrofe(object texto)
+{
+    ExpurgaApostrofe = replace(texto, "'", "''");
+}
+
+public void LimpaLixo(object input)
+{
+    var lixo;
+    var textoOK;
+    lixo = array("select", "drop", ";", "--", "insert", "delete", "xp_");
+    textoOK = input;
+    for (var i = 0; i <= uBound(lixo); i++)
+        textoOK = replace(textoOK, lixo(i), "");
+    LimpaLixo = textoOK;
+}
+
+public void ValidaDados(object input)
+{
+    lixo = array("select", "insert", "update", "delete", "drop", "--", "'");
+    ValidaDados = true;
+    for (var i = lBound(lixo); i <= ubound(llixo); i++)
+    {
+        if ((instr(1, input, lixo(i), vbtextcompare) != 0))
+        {
+            ValidaDados = false;
+        }
+    }
+}

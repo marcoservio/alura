@@ -1,0 +1,12 @@
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\bin\Debug\Dinheiro.exe.config
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\bin\Debug\Dinheiro.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\bin\Debug\Dinheiro.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\bin\Debug\Caelum.Stella.CSharp.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\obj\Debug\Dinheiro.csprojAssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\obj\Debug\Dinheiro.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\obj\Debug\Dinheiro.csproj.CopyComplete
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\obj\Debug\Dinheiro.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\Dinheiro\obj\Debug\Dinheiro.pdb

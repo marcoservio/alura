@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    function PulaLinha(){
+        document.write("<br>");
+    }
+
+    function Mostra(mensagem){
+        document.write(mensagem);
+        PulaLinha();
+    }
+
+    for(var i = 1; i <= 3; i++){
+        for(var coluna = 1; coluna <= 10; coluna++){
+            document.write("*")
+        }
+        
+        PulaLinha();
+    }
+</script>

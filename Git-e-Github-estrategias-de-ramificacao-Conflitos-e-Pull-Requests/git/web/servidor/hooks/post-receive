@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git --git-dir="C:\Users\marco\OneDrive\git-marcoservio\servidor" --work-tree="C:\Users\marco\OneDrive\git-marcoservio\web" checkout -f

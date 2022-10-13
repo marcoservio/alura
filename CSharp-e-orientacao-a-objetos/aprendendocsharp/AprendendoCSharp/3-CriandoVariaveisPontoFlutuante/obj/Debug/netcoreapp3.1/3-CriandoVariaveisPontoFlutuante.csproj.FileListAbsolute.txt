@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\bin\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.exe
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\bin\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\bin\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\bin\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\bin\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\bin\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\obj\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\obj\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\obj\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\obj\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\obj\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\obj\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\obj\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\3-CriandoVariaveisPontoFlutuante\obj\Debug\netcoreapp3.1\3-CriandoVariaveisPontoFlutuante.genruntimeconfig.cache

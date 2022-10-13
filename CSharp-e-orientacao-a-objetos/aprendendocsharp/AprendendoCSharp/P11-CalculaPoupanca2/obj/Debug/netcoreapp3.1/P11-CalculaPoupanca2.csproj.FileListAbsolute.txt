@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\bin\Debug\netcoreapp3.1\P11-CalculaPoupanca2.exe
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\bin\Debug\netcoreapp3.1\P11-CalculaPoupanca2.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\bin\Debug\netcoreapp3.1\P11-CalculaPoupanca2.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\bin\Debug\netcoreapp3.1\P11-CalculaPoupanca2.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\bin\Debug\netcoreapp3.1\P11-CalculaPoupanca2.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\bin\Debug\netcoreapp3.1\P11-CalculaPoupanca2.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\obj\Debug\netcoreapp3.1\P11-CalculaPoupanca2.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\obj\Debug\netcoreapp3.1\P11-CalculaPoupanca2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\obj\Debug\netcoreapp3.1\P11-CalculaPoupanca2.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\obj\Debug\netcoreapp3.1\P11-CalculaPoupanca2.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\obj\Debug\netcoreapp3.1\P11-CalculaPoupanca2.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\obj\Debug\netcoreapp3.1\P11-CalculaPoupanca2.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\obj\Debug\netcoreapp3.1\P11-CalculaPoupanca2.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\P11-CalculaPoupanca2\obj\Debug\netcoreapp3.1\P11-CalculaPoupanca2.genruntimeconfig.cache

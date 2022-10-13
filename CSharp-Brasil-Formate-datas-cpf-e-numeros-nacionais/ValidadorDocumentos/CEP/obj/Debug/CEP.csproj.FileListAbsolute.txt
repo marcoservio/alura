@@ -1,0 +1,12 @@
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\bin\Debug\CEP.exe.config
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\bin\Debug\CEP.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\bin\Debug\CEP.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\obj\Debug\CEP.csprojAssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\obj\Debug\CEP.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\obj\Debug\CEP.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\obj\Debug\CEP.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\bin\Debug\Caelum.Stella.CSharp.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\bin\Debug\Newtonsoft.Json.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\bin\Debug\Newtonsoft.Json.xml
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharpBrasil\ValidadorDocumentos\CEP\obj\Debug\CEP.csproj.CopyComplete

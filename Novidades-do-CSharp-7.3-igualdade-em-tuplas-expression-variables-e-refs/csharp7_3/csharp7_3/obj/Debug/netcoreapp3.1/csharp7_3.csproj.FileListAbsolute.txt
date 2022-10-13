@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\bin\Debug\netcoreapp3.1\csharp7_3.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\bin\Debug\netcoreapp3.1\csharp7_3.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\bin\Debug\netcoreapp3.1\csharp7_3.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\bin\Debug\netcoreapp3.1\csharp7_3.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\bin\Debug\netcoreapp3.1\csharp7_3.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\bin\Debug\netcoreapp3.1\csharp7_3.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\obj\Debug\netcoreapp3.1\csharp7_3.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\obj\Debug\netcoreapp3.1\csharp7_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\obj\Debug\netcoreapp3.1\csharp7_3.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\obj\Debug\netcoreapp3.1\csharp7_3.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\obj\Debug\netcoreapp3.1\csharp7_3.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\obj\Debug\netcoreapp3.1\csharp7_3.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\obj\Debug\netcoreapp3.1\csharp7_3.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\csharp7_3\csharp7_3\obj\Debug\netcoreapp3.1\csharp7_3.genruntimeconfig.cache

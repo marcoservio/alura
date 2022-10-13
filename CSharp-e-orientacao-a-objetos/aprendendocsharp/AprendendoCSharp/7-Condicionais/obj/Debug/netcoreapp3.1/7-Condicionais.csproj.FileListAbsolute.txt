@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\bin\Debug\netcoreapp3.1\7-Condicionais.exe
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\bin\Debug\netcoreapp3.1\7-Condicionais.deps.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\bin\Debug\netcoreapp3.1\7-Condicionais.runtimeconfig.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\bin\Debug\netcoreapp3.1\7-Condicionais.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\bin\Debug\netcoreapp3.1\7-Condicionais.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\bin\Debug\netcoreapp3.1\7-Condicionais.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\obj\Debug\netcoreapp3.1\7-Condicionais.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\obj\Debug\netcoreapp3.1\7-Condicionais.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\obj\Debug\netcoreapp3.1\7-Condicionais.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\obj\Debug\netcoreapp3.1\7-Condicionais.AssemblyInfo.cs
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\obj\Debug\netcoreapp3.1\7-Condicionais.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\obj\Debug\netcoreapp3.1\7-Condicionais.dll
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\obj\Debug\netcoreapp3.1\7-Condicionais.pdb
+C:\Users\marco\OneDrive\git-marcoservio\aprendendocsarp\AprendendoCSharp\7-Condicionais\obj\Debug\netcoreapp3.1\7-Condicionais.genruntimeconfig.cache

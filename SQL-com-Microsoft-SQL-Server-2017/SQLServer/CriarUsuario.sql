@@ -1,0 +1,1 @@
+CREATE LOGIN marco WITH PASSWORD = 'marco@123'

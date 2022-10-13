@@ -1,0 +1,508 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ByteBank.Modelos</name>
+    </assembly>
+    <members>
+        <member name="M:ByteBank.Modelos.ClasseTeste.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ByteBank.Modelos.ClasseDerivada">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ByteBank.Modelos.ModificadoresTeste">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.ModificadoresTeste.MetodoPublico">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.ModificadoresTeste.MetodoPrivado">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.ModificadoresTeste.MetodoProtegido">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.ModificadoresTeste.MetodoInterno">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ByteBank.Modelos.Cliente">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ByteBank.Modelos.Cliente._cpf">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.Cliente.Nome">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.Cliente.Cpf">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.Cliente.Profissao">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Cliente.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ByteBank.Modelos.Cliente.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.ContaCorrente">
+            <summary>
+            Define uma Conta Corrente do banco ByteBank.
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.ContaCorrente.ContadorSaquesNaoPermitidos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.ContaCorrente.ContadorTranferenciaNaoPermitidas">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.ContaCorrente.TaxaOperacao">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.ContaCorrente.Titular">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.ContaCorrente.TotalDeContasCriadas">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.ContaCorrente.Agencia">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.ContaCorrente.Numero">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.ContaCorrente.Saldo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.ContaCorrente.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Cria uma instacia de ContaCorrente com os argumentos utilizados.
+            </summary>
+            <param name="numeroAgencia"> Representa o valor da propriedade <see cref="P:ByteBank.Modelos.ContaCorrente.Agencia"/> e deve possuir um valor maior que 0 </param>
+            <param name="numeroConta"> Representa o valor da propriedade <see cref="P:ByteBank.Modelos.ContaCorrente.Numero"/> e deve possuir um valor maior que 0 </param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:ByteBank.Modelos.ContaCorrente.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.ContaCorrente.Sacar(System.Double)">
+            <summary>
+            Realiza o saque e atualiza o valor da propriedade <see cref="P:ByteBank.Modelos.ContaCorrente.Saldo"/>.
+            </summary>
+            <param name="valor"> Representa o valor do saque, deve ser maior que 0 e menor que o <see cref="P:ByteBank.Modelos.ContaCorrente.Saldo"/> </param>
+            <exception cref="T:System.ArgumentException"> Exceção lançada quando um valor negativo é ultilizado no argumento <paramref name="valor"/> </exception>
+            <exception cref="T:ByteBank.Modelos.SaldoInsuficienteException"> Exceção lançada quando o valor de <paramref name="valor"/> é maior que o valor da propriedade <see cref="P:ByteBank.Modelos.ContaCorrente.Saldo"/> </exception>
+        </member>
+        <member name="M:ByteBank.Modelos.ContaCorrente.Depositar(System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="valor"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.ContaCorrente.Transferir(System.Double,ByteBank.Modelos.ContaCorrente)">
+            <summary>
+            
+            </summary>
+            <param name="valor"></param>
+            <param name="contaDestino"></param>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:ByteBank.Modelos.OperacaoFinanceiraException"></exception>
+        </member>
+        <member name="M:ByteBank.Modelos.ContaCorrente.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ByteBank.Modelos.ContaCorrente.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ByteBank.Modelos.ContaCorrente.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ByteBank.Modelos.ContaCorrente.CompareTo(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.Funcionarios.Auxiliar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Auxiliar.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cpf"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Auxiliar.AumentarSalario">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Auxiliar.GetBonificacao">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.Funcionarios.Desenvolvedor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Desenvolvedor.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cpf"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Desenvolvedor.AumentarSalario">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Desenvolvedor.GetBonificacao">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.Funcionarios.Designer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Designer.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cpf"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Designer.AumentarSalario">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Designer.GetBonificacao">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.Funcionarios.Diretor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Diretor.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cpf"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Diretor.AumentarSalario">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Diretor.GetBonificacao">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.Funcionarios.Funcionario">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.Funcionarios.Funcionario.TotalDeFuncionario">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.Funcionarios.Funcionario.Nome">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.Funcionarios.Funcionario.CPF">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.Funcionarios.Funcionario.Salario">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Funcionario.#ctor(System.Double,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="salario"></param>
+            <param name="cpf"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Funcionario.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cpf"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Funcionario.AumentarSalario">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.Funcionario.GetBonificacao">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.Funcionarios.FuncionarioAutenticavel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ByteBank.Modelos.Funcionarios.FuncionarioAutenticavel._autenticacaoHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.Funcionarios.FuncionarioAutenticavel.Senha">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.FuncionarioAutenticavel.#ctor(System.Double,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="salario"></param>
+            <param name="cpf"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.FuncionarioAutenticavel.Autenticar(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="senha"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.Funcionarios.GerenteDeConta">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.GerenteDeConta.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cpf"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.GerenteDeConta.AumentarSalario">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Funcionarios.GerenteDeConta.GetBonificacao">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.GerenciadorBonificacao">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ByteBank.Modelos.GerenciadorBonificacao._totalBonificacao">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.GerenciadorBonificacao.Registrar(ByteBank.Modelos.Funcionarios.Funcionario)">
+            <summary>
+            
+            </summary>
+            <param name="funcionario"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.GerenciadorBonificacao.GetTotalBonificacao">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.OperacaoFinanceiraException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.OperacaoFinanceiraException.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.OperacaoFinanceiraException.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="mensagem"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.OperacaoFinanceiraException.#ctor(System.String,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="mensagem"></param>
+            <param name="excecaoInterna"></param>
+        </member>
+        <member name="T:ByteBank.Modelos.ParceiroComercial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ByteBank.Modelos.ParceiroComercial._autenticacaoHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.ParceiroComercial.Senha">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.ParceiroComercial.Autenticar(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="senha"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.SaldoInsuficienteException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.SaldoInsuficienteException.Saldo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ByteBank.Modelos.SaldoInsuficienteException.ValorSaque">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.SaldoInsuficienteException.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.SaldoInsuficienteException.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="mensagem"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.SaldoInsuficienteException.#ctor(System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="saldo"></param>
+            <param name="valorSaque"></param>
+        </member>
+        <member name="M:ByteBank.Modelos.SaldoInsuficienteException.#ctor(System.String,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="mensagem"></param>
+            <param name="excecaoInterna"></param>
+        </member>
+        <member name="T:ByteBank.Modelos.Sistemas.IAutenticavel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Sistemas.IAutenticavel.Autenticar(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="senha"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ByteBank.Modelos.Sistemas.SistemaInterno">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ByteBank.Modelos.Sistemas.SistemaInterno.Logar(ByteBank.Modelos.Sistemas.IAutenticavel,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="funcionario"></param>
+            <param name="senha"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

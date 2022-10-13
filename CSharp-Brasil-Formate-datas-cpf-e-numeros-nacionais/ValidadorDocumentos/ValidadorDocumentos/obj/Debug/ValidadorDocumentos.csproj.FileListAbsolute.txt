@@ -1,0 +1,12 @@
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\bin\Debug\ValidadorDocumentos.exe.config
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\bin\Debug\ValidadorDocumentos.exe
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\bin\Debug\ValidadorDocumentos.pdb
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\bin\Debug\Caelum.Stella.CSharp.dll
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\obj\Debug\ValidadorDocumentos.csprojAssemblyReference.cache
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\obj\Debug\ValidadorDocumentos.csproj.CoreCompileInputs.cache
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\obj\Debug\ValidadorDocumentos.csproj.CopyComplete
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\obj\Debug\ValidadorDocumentos.exe
+C:\Users\marco\source\repos\ValidadorDocumentos\ValidadorDocumentos\obj\Debug\ValidadorDocumentos.pdb

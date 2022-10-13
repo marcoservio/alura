@@ -1,0 +1,13 @@
+C:\Users\marco\OneDrive\git-marcoservio\ByteBankSA\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.dll
+C:\Users\marco\OneDrive\git-marcoservio\ByteBankSA\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.pdb
+C:\Users\marco\OneDrive\git-marcoservio\ByteBankSA\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\ByteBankSA\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\ByteBankSA\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.dll
+C:\Users\marco\OneDrive\git-marcoservio\ByteBankSA\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankSA\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankSA\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankSA\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankSA\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankSA\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.dll
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankSA\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankSA\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.xml

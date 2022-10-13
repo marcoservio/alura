@@ -1,0 +1,25 @@
+<canvas width="1500" height="1500"></canvas>
+<script>
+    function DesenhaEsquadro(xa, ya, xc, yc, cor){
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        //Esquadro de fora
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.moveTo(xa, ya);
+        pincel.lineTo(xc, yc);
+        pincel.lineTo(xa, yc);        
+        pincel.fill();
+
+        //Esquadro de dento
+        pincel.fillStyle = 'white';
+        pincel.beginPath();
+        pincel.moveTo((6 * xa + xc) / 7, (9 * ya + 5 * yc) / 14);
+        pincel.lineTo((6 * xa + xc) / 7, (ya + 6 * yc) / 7);
+        pincel.lineTo((5 * xa + 9 * xc) / 14, (ya + 6 * yc) / 7);
+        pincel.fill();
+    }
+
+    DesenhaEsquadro(100, 100, 500, 500, 'black')
+</script>
