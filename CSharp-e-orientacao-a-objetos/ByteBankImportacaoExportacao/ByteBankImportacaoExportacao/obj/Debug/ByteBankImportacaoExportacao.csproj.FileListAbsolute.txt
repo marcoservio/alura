@@ -6,3 +6,10 @@ C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankImportacaoExportacao\ByteB
 C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.pdb
 C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.exe
 C:\Users\marco\OneDrive\git-marcoservio\alura\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-e-orientacao-a-objetos\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.exe.config
+C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-e-orientacao-a-objetos\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-e-orientacao-a-objetos\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.pdb
+C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-e-orientacao-a-objetos\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.csprojAssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-e-orientacao-a-objetos\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-e-orientacao-a-objetos\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.exe
+C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-e-orientacao-a-objetos\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.pdb
