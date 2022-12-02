@@ -36,8 +36,8 @@ namespace Dinheiro
             CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
             //Erro não pode somar moedas diferentes.
-            Money somaMoedasDiferentes = euro + dolar;
-            Console.WriteLine(somaMoedasDiferentes.ToString());
+            ///Money somaMoedasDiferentes = euro + dolar;
+            //Console.WriteLine(somaMoedasDiferentes.ToString());
 
             Console.ReadKey();
         }
