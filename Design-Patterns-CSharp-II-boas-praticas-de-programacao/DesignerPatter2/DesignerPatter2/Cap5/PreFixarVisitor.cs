@@ -21,7 +21,7 @@ namespace DesignerPatter2.Cap5
 
         public void ImprimeNumero(Numero numero)
         {
-            Console.Write(numero.Numero);
+            Console.Write(numero.Valor);
         }
 
         public void ImprimeRaizQuadrada(RaizQuadrada raiz)
