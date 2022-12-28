@@ -22,3 +22,15 @@ C:\Users\marco\OneDrive\git-marcoservio\alura\Windows-Forms-com-CSharp\CursoWind
 C:\Users\marco\OneDrive\git-marcoservio\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.CopyComplete
 C:\Users\marco\OneDrive\git-marcoservio\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.dll
 C:\Users\marco\OneDrive\git-marcoservio\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.pdb
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Databases\Fichario.mdf
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Databases\Fichario_log.ldf
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.dll.config
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.dll
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.pdb
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.AssemblyReference.cache
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.CoreCompileInputs.cache
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.CopyComplete
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.dll
+C:\Projects\alura\Windows-Forms-com-CSharp\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.pdb
