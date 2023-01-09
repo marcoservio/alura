@@ -16,7 +16,7 @@ namespace TrabalhandoComDatas
             Console.WriteLine(data.ToString("d")); //data sem hora
             Console.WriteLine(data.ToString("d", new CultureInfo("pt-BR")));
             Console.WriteLine(data.ToString("d", new CultureInfo("en-US")));
-            Console.WriteLine(data.ToString("dd/MM")); //M maiusculo porque o m minisculo é o m da hora
+            Console.WriteLine(data.ToString("dd.MM")); //M maiusculo porque o m minisculo é o m da hora
             Console.WriteLine(data.ToString("dd/MM/yy")); 
 
             data = new DateTime(2017, 9, 23, 13, 14, 15, 987);

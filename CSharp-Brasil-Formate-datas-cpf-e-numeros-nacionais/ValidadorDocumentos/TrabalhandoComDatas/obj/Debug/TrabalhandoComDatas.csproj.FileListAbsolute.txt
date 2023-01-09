@@ -12,3 +12,10 @@ C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-Brasil-Formate-datas-cpf-e-
 C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-Brasil-Formate-datas-cpf-e-numeros-nacionais\ValidadorDocumentos\TrabalhandoComDatas\obj\Debug\TrabalhandoComDatas.csproj.CoreCompileInputs.cache
 C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-Brasil-Formate-datas-cpf-e-numeros-nacionais\ValidadorDocumentos\TrabalhandoComDatas\obj\Debug\TrabalhandoComDatas.exe
 C:\Users\marco\OneDrive\git-marcoservio\alura\CSharp-Brasil-Formate-datas-cpf-e-numeros-nacionais\ValidadorDocumentos\TrabalhandoComDatas\obj\Debug\TrabalhandoComDatas.pdb
+C:\Projects\alura\CSharp-Brasil-Formate-datas-cpf-e-numeros-nacionais\ValidadorDocumentos\TrabalhandoComDatas\bin\Debug\TrabalhandoComDatas.exe.config
+C:\Projects\alura\CSharp-Brasil-Formate-datas-cpf-e-numeros-nacionais\ValidadorDocumentos\TrabalhandoComDatas\bin\Debug\TrabalhandoComDatas.exe
+C:\Projects\alura\CSharp-Brasil-Formate-datas-cpf-e-numeros-nacionais\ValidadorDocumentos\TrabalhandoComDatas\bin\Debug\TrabalhandoComDatas.pdb
+C:\Projects\alura\CSharp-Brasil-Formate-datas-cpf-e-numeros-nacionais\ValidadorDocumentos\TrabalhandoComDatas\obj\Debug\TrabalhandoComDatas.csprojAssemblyReference.cache
+C:\Projects\alura\CSharp-Brasil-Formate-datas-cpf-e-numeros-nacionais\ValidadorDocumentos\TrabalhandoComDatas\obj\Debug\TrabalhandoComDatas.csproj.CoreCompileInputs.cache
+C:\Projects\alura\CSharp-Brasil-Formate-datas-cpf-e-numeros-nacionais\ValidadorDocumentos\TrabalhandoComDatas\obj\Debug\TrabalhandoComDatas.exe
+C:\Projects\alura\CSharp-Brasil-Formate-datas-cpf-e-numeros-nacionais\ValidadorDocumentos\TrabalhandoComDatas\obj\Debug\TrabalhandoComDatas.pdb
