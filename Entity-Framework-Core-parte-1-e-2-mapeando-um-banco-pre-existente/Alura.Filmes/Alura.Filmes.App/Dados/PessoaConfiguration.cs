@@ -9,40 +9,37 @@ using System.Threading.Tasks;
 
 namespace Alura.Filmes.App.Dados
 {
-    class AtorConfiguration : IEntityTypeConfiguration<Ator>
+    public class PessoaConfiguration<T> : IEntityTypeConfiguration<T> where T : Pessoa
     {
-        public void Configure(EntityTypeBuilder<Ator> builder)
+        public virtual void Configure(EntityTypeBuilder<T> builder)
         {
-            builder.ToTable("actor");
-
             builder
-                .Property(a => a.Id)
-                .HasColumnName("actor_id");
-
-            builder
-                .Property(a => a.PrimeiroNome)
+                .Property(c => c.PrimeiroNome)
                 .HasColumnName("first_name")
                 .HasColumnType("varchar(45)")
                 .IsRequired();
 
             builder
-                .Property(a => a.UltimoNome)
+                .Property(c => c.UltimoNome)
                 .HasColumnName("last_name")
                 .HasColumnType("varchar(45)")
                 .IsRequired();
+
+            builder
+                .Property(c => c.Email)
+                .HasColumnName("email")
+                .HasColumnType("varchar(50)")
+                .IsRequired();
+
+            builder
+                .Property(c => c.Ativo)
+                .HasColumnName("active");
 
             builder
                 .Property<DateTime>("last_update")
                 .HasColumnType("datetime")
                 .HasDefaultValueSql("getdate()")
                 .IsRequired();
-
-            builder
-                .HasIndex(a => a.UltimoNome)
-                .HasName("idx_actor_last_name");
-
-            builder
-                .HasAlternateKey(a => new { a.PrimeiroNome, a.UltimoNome});
         }
     }
 }

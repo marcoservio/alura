@@ -126,9 +126,15 @@
   <ItemGroup>
     <Compile Include="Dados\AluraFilmeContexto.cs" />
     <Compile Include="Dados\AtorConfiguration.cs" />
+    <Compile Include="Dados\Cliente.cs" />
+    <Compile Include="Dados\ClienteConfiguration.cs" />
     <Compile Include="Dados\FilmeAtorConfiguration.cs" />
     <Compile Include="Dados\FilmeConfiguration.cs" />
+    <Compile Include="Dados\Funcionario.cs" />
+    <Compile Include="Dados\FuncionarioConfiguration.cs" />
     <Compile Include="Dados\IdiomaConfiguration.cs" />
+    <Compile Include="Dados\PessoaConfiguration.cs" />
+    <Compile Include="Extensions\ClassificacaoIndicativaExtensions.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
     <Compile Include="Migrations\20230106124935_Inicial.cs" />
     <Compile Include="Migrations\20230106124935_Inicial.designer.cs">
@@ -138,11 +144,33 @@
     <Compile Include="Migrations\20230109122336_Idioma.designer.cs">
       <DependentUpon>20230109122336_Idioma.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20230110123956_IndiceAtorUltimoNome.cs" />
+    <Compile Include="Migrations\20230110123956_IndiceAtorUltimoNome.designer.cs">
+      <DependentUpon>20230110123956_IndiceAtorUltimoNome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230110153446_UniqueAtorPrimeiroUltimoNome.cs" />
+    <Compile Include="Migrations\20230110153446_UniqueAtorPrimeiroUltimoNome.designer.cs">
+      <DependentUpon>20230110153446_UniqueAtorPrimeiroUltimoNome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230111122848_Classificacao.cs" />
+    <Compile Include="Migrations\20230111122848_Classificacao.designer.cs">
+      <DependentUpon>20230111122848_Classificacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230111123714_FilmeCheckConstraint.cs" />
+    <Compile Include="Migrations\20230111123714_FilmeCheckConstraint.designer.cs">
+      <DependentUpon>20230111123714_FilmeCheckConstraint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230112123929_Enumerado.cs" />
+    <Compile Include="Migrations\20230112123929_Enumerado.designer.cs">
+      <DependentUpon>20230112123929_Enumerado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AluraFilmeContextoModelSnapshot.cs" />
     <Compile Include="Negocio\Ator.cs" />
+    <Compile Include="Negocio\ClassificacaoIndicativa.cs" />
     <Compile Include="Negocio\Filme.cs" />
     <Compile Include="Negocio\FilmeAtor.cs" />
     <Compile Include="Negocio\Idioma.cs" />
+    <Compile Include="Negocio\Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
