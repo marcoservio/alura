@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Projects\alura\Entity-LinQ-parte-1-crie-queries-poderosas-em-CSharp\AluraTunes\Aula3\Data\AluraTunes.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Projects\alura\Entity-LinQ-parte-1-e-2-crie-queries-poderosas-em-CSharp\AluraTunes\Aula3\Data\AluraTunes.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
