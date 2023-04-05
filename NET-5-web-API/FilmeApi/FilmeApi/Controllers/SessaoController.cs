@@ -1,7 +1,11 @@
 ﻿using AutoMapper;
+
 using FilmeApi.Data;
 using FilmeApi.Data.Dtos.SessaoDtos;
 using FilmeApi.Models;
+using FilmeApi.Services;
+
+using FluentResults;
 
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,40 +19,39 @@ namespace FilmeApi.Controllers
     [Route("[controller]")]
     public class SessaoController : ControllerBase
     {
-        private readonly FilmeContext _context;
-        private readonly IMapper _mapper;
+        private readonly SessaoService _service;
 
-        public SessaoController(FilmeContext context, IMapper mapper)
+        public SessaoController(SessaoService service)
         {
-            _context = context;
-            _mapper = mapper;
+            _service = service;
         }
 
         [HttpPost]
         public IActionResult Adiciona([FromBody] CreateSessaoDto sessaoDto)
         {
-            var sessao = _mapper.Map<Sessao>(sessaoDto);
-            _context.Sessoes.Add(sessao);
-            _context.SaveChanges();
-            return CreatedAtAction(nameof(RecuperaPorId), new { sessao.Id }, sessao);
+            ReadSessaoDto readDto = _service.Adiciona(sessaoDto);
+
+            return CreatedAtAction(nameof(RecuperaPorId), new { readDto.Id }, readDto);
         }
 
         [HttpGet]
-        public IEnumerable<Sessao> Recupera()
+        public IActionResult Recupera()
         {
-            return _context.Sessoes;
+            List<ReadSessaoDto> lstReadDto = _service.Recupera();
+
+            if (lstReadDto != null && lstReadDto.Count > 0)
+                return Ok(lstReadDto);
+
+            return NotFound();
         }
 
         [HttpGet("{id}")]
         public IActionResult RecuperaPorId(int id)
         {
-            var sessao = _context.Sessoes.FirstOrDefault(s => s.Id == id);
+            ReadSessaoDto readDto = _service.RecuperaPorId(id);
 
-            if (sessao != null)
-            {
-                var sessaoDto = _mapper.Map<ReadSessaoDto>(sessao);
-                return Ok(sessaoDto);
-            }
+            if (readDto != null)
+                return Ok(readDto.Id);
 
             return NotFound();
         }
@@ -56,13 +59,10 @@ namespace FilmeApi.Controllers
         [HttpDelete("{id}")]
         public IActionResult Deleta(int id)
         {
-            var sessao = _context.Sessoes.FirstOrDefault(s => s.Id == id);
+            Result resultado = _service.Deleta(id);
 
-            if (sessao == null)
+            if (resultado.IsFailed)
                 return NotFound();
-
-            _context.Sessoes.Remove(sessao);
-            _context.SaveChanges();
 
             return NoContent();
         }
