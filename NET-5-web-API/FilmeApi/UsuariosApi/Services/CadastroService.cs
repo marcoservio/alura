@@ -19,10 +19,10 @@ namespace UsuariosApi.Services
     public class CadastroService
     {
         private readonly IMapper _mapper;
-        private readonly UserManager<IdentityUser<int>> _userManager;
+        private readonly UserManager<CustomIdentityUser> _userManager;
         private readonly EmailService _emailService;
 
-        public CadastroService(IMapper mapper, UserManager<IdentityUser<int>> userManager, EmailService emailService)
+        public CadastroService(IMapper mapper, UserManager<CustomIdentityUser> userManager, EmailService emailService, RoleManager<IdentityRole<int>> roleManager)
         {
             _mapper = mapper;
             _userManager = userManager;
@@ -32,8 +32,10 @@ namespace UsuariosApi.Services
         public Result CadastraUsuario(CreateUsuarioDto createDto)
         {
             var usuario = _mapper.Map<Usuario>(createDto);
-            var usuarioIdentity = _mapper.Map<IdentityUser<int>>(usuario);
+            var usuarioIdentity = _mapper.Map<CustomIdentityUser>(usuario);
             var resultadoIdentity = _userManager.CreateAsync(usuarioIdentity, createDto.Password);
+
+            _userManager.AddToRoleAsync(usuarioIdentity, "regular");
 
             if (resultadoIdentity.Result.Succeeded)
             {

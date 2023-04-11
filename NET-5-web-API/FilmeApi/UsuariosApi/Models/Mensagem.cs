@@ -8,6 +8,7 @@ namespace UsuariosApi.Models
     public class Mensagem
     {
         public List<MailboxAddress> Destinatario { get; set; }
+        public string DestinatarioNew { get; set; }
         public string Assunto { get; set; }
         public string Conteudo { get; set; }
 
@@ -15,8 +16,9 @@ namespace UsuariosApi.Models
         {
             Destinatario = new List<MailboxAddress>();
             Destinatario.AddRange(destinatario.Select(x => new MailboxAddress(x)));
+            DestinatarioNew = destinatario.FirstOrDefault();
             Assunto = assunto;
-            Conteudo = $"https://localhost:5001/ativa?UsuarioId={usuarioId}&CodigoAtivacao={code}";
+            Conteudo = $"https://localhost:6001/ativa?UsuarioId={usuarioId}&CodigoAtivacao={code}";
         }
     }
 }
