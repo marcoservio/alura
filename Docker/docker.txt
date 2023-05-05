@@ -1,0 +1,30 @@
+docker pull -> baixa os containers
+docker run -> executa os containers
+docker ps -> mostra os containers em execução
+docker container ls -a -> mostra os containers que ja foram executados (docker ps -a)
+docker run ubuntu sleep 1d -> executa o comando depois de um dia
+docker stop id_container -> para a execução do containe
+docker stop -t=0 id_container -> para a execução do containe sem esperar
+docker start id_container -> starta um container que esta no status de parador
+docker exec -it id_container bash -> executa um comando dentro do container
+docker pause id_container -> pausa a execução do container
+docker unpause id_container -> despausa um container
+docker rm id_container -> remove um container
+docker run -it ubuntu bash -> cria o container e ja executa um comando nele
+docker run -d nome_container -> criar o container e não trava o terminal
+docker run -d -P dockersamples/static-site -> criar o container e faz o mapeamento automatico das portas
+docker run -d -p 8081:80 dockersamples/static-site -> faz o mapeamento manual
+docker rm id_container --force -> remove e apaga o container forçado
+docker port id_container -> mostra o mapeamento das portas que foi feito
+docker images -> mostra todas as images baixadas
+docker inspect id_imagem -> mostra informações sobre as imagens 
+docker history id_imagem -> mostra todas as camadas 
+docker build -t marcoservio/app-node:1.0 . -> criar uma imagem apartir de um projeto com dockerfile
+documentação dockerfile -> https://docs.docker.com/engine/reference/builder/
+docker stop $(docker container ls -q) -> para todos os containers
+docker login -u marcoservio -> configurar dockerhub com a maquina
+docker push nome_da_imagem -> mandar para o dockerhub
+docker tag marcoservio/app-node:1.0 teste/app-node:1.0 -> troca o nome da imagem
+docker container rm $(docker container ls -aq) -> remove todos os containers 
+docker rmi $(docker image ls -aq) --force -> remove todas as imagens
+docker ps -sa -> mostra o tamanho da imagem e os todos os cotainers parados ou não
