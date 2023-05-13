@@ -15,6 +15,7 @@ docker run -d nome_container -> criar o container e não trava o terminal
 docker run -d -P dockersamples/static-site -> criar o container e faz o mapeamento automatico das portas
 docker run -d -p 8081:80 dockersamples/static-site -> faz o mapeamento manual
 docker rm id_container --force -> remove e apaga o container forçado
+docker rm $(docker container ps -aq) --force -> remover todos os containers
 docker port id_container -> mostra o mapeamento das portas que foi feito
 docker images -> mostra todas as images baixadas
 docker inspect id_imagem -> mostra informações sobre as imagens 
@@ -28,3 +29,23 @@ docker tag marcoservio/app-node:1.0 teste/app-node:1.0 -> troca o nome da imagem
 docker container rm $(docker container ls -aq) -> remove todos os containers 
 docker rmi $(docker image ls -aq) --force -> remove todas as imagens
 docker ps -sa -> mostra o tamanho da imagem e os todos os cotainers parados ou não
+docker run -it -v /home/marcoservio/volume-docker:/app ubuntu bash -> tudo que foi escrito no diretorio app do container vai ser escrito na maquina local. Quando starta outro container como o mesmo diretorio ele puxa os arquivos
+docker run -it --mount type=bind,source=/home/marcoservio/volume-docker,target=/app ubuntu bash -> persiste os dados
+docker volume ls -> mostra os volumes
+docker volume create meu-volume -> cria um volume
+docker run -it -v meu-volume:/app ubuntu bash -> mais recomendado pelo docker
+docker run -it --mount source=meu-volume,target=/app ubuntu bash
+docker run -it --name ubuntu1 --network minha-bridge ubuntu bash -> dar o nome para o container
+docker network ls -> mostra as redes
+docker network create --driver bridge minha-bridge -> cria uma rede
+  bridge -> usada para comunicar containers em um mesmo host
+    bridge criadas manualmente permitem comunicação via hostname
+  host ->  remove o isolamento de rede entre o container e o host
+  none -> remove a interface de rede do container
+Fazer o arquivo docker compose para unir varios containers para excutar uma aplicação
+  docker-compose up
+  docker-compose up -d -> não trava o terminal
+  docker-compose ps -> mostra os serviços services criardos pelo compose
+  docker-compose down -> derruba os containers
+  arquivos .yml -> exemplo esta na pasta ymls
+docker logs nome_cotainer -f -> mostra os log em tempo real da aplicação

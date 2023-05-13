@@ -1,0 +1,47 @@
+version: "3.9"
+services:
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'restaurantedb'
+      MYSQL_ROOT_PASSWORD: 'root'
+    container_name: mysql
+    networks:
+      - microservices-bridge
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    restart: always
+    container_name: rabbitmq-service
+    hostname: rabbitmq-service
+    networks:
+      - microservices-bridge
+
+  itemservice:
+    image: itemservice:2.5
+    restart: always
+    container_name: item-service
+    networks:
+      - microservices-bridge
+    ports:
+      - 12123:80
+    depends_on:
+      - mysql
+      - rabbitmq
+
+  restauranteservice:
+    image: restauranteservice:2.5
+    restart: always
+    container_name: restaurante-service
+    networks:
+      - microservices-bridge
+    ports:
+      - 12124:80
+    depends_on:
+      - mysql
+      - rabbitmq
+
+networks:
+  microservices-bridge:
+    driver: bridge

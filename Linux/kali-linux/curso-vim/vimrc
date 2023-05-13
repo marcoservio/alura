@@ -1,0 +1,47 @@
+" execução do gerenciador de plugns
+execute pathogen#infect()
+
+" remapear atalho do emmet
+let g:user_emmet_leader_key=','
+
+" mudar a cor do backgroud do vim
+" colorscheme industry 
+
+" tamanho da identaçao
+set tabstop=2
+
+" Identifica o tipo do arquivo e identa
+filetype plugin indent on
+
+" colorir editor
+syntax on
+
+" deixar coerennte indentação com  tamanho de TAB
+set shiftwidth=2
+
+" comportamento usual do backspace
+set backspace=2
+
+" esse comando serve para numerar as linhas
+set number
+
+" fazer calculo da distancia das linhas
+set relativenumber
+
+" busca imcremental - feedback enquanto busco
+set incsearch
+
+" destaque nos resultados
+set hlsearch
+
+" salvar na codificação desejada
+set fileencoding=iso-8859-1
+
+" visualizar na codigicação desejada
+set encoding=iso-8859-1
+
+" usar espacos no lugar de tab
+set expandtab
+
+" backspace respeitar identacao
+set softtabstop=2

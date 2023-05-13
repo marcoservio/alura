@@ -1,0 +1,38 @@
+cd / -> vai pro c:
+cd nome_pasta -> troca de diretorio
+cd .. -> volta um diretorio
+. -> repositorio atual
+cls -> limpa o terminal
+mkdir nome_pasta -> cria diretorio
+del nome_arquivo -> deleta diretorio
+type nome_arquivo_texto -> mostra o conteudo do arquivo texto
+more nome_arquivo_texto -> mostra o conteudo do arqvuivo texto paginado
+move arqvuio \backup -> move um arquivo para uma pasta
+tar -cf teste.zip *.xml -> zipa todos os arquivos .xml em uma zip chamado teste
+tar -tf teste.zip -> lista os arqvuios dentro de um zip
+tar -xf teste.zip -> extrai os arquivos
+tar --help -> ajuda sobre o compactador
+set -> mostra todas as variaveis
+set mensagem=Olá mundo! -> atribui um valor para uma variavel local ao fechar o terminal perde o valor dela
+setx path "%path%;C:\Users\Usuario\Folder\bin" /M -> atribui valores a variaveis do sistema somente adm
+%mensagem% ou %MENSAGEM% -> mostra o conteudo da variavel
+winget -> instalador de pacotes windows
+winget install -e --id Oracle.SDK.19 -> instala extamente(-e) o id digitado
+winget --info -> várias informações sobre o sistema que estamos utilizando
+winget uninstall Mozilla.Firefox -> desinstala um pacote
+chocolatey -> instalador de pacotes windows para windows mais antigos -> seguiu passo a passo de instalação no site
+
+SCRIPTS
+  .\nome_script.bat -> executa um script
+  --- Sempre criar script .bat ---
+  pause -> para a excução do script e espera a interação com o usuario
+  @echo off -> para de mostra o comando echo somente a saida dele
+  rem -> comentario
+  set /p nome=Digite seu nome= -> Esperar o usuario digitar um valor para ser armazenado na variavel
+  comando 2> arquivo.txt -> joga todos os erro para o arquivo
+    0 -> entrada
+    1 -> saida
+    2 -> saida erro
+  IF %ERRORLEVEL% NEQ 0 (echo Erro na execução do script) -> tratar erro
+    NEQ -> Not EQual To
+
