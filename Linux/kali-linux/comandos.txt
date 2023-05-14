@@ -11,6 +11,17 @@ scp -r diretorio usuario@ip_maquina:~ -> copiar de uma maquina linux pra outra
 crtl + z -> para a execução do um programa
 fg -> volta com o program parado
 
+Uteis Criação Usuario
+  /etc/passwd -> mostra usuarios
+  /etc/shadown -> mostra informações de senhas do usuario
+  sudo userad marco -> adiciona um usuario
+  sudo passwd marco -> muda a senha de um usuario
+  sudo useradd -m marco -> criar o usuario e cria o diretorio home
+  sudo userdel -r marco -> apaga o usuario e deleta a pasta home
+  vipw -> edita o passwd
+  vipw -S -> edita o shadown
+  su marco -> entra em outro usuario
+
 Uteis Partição
   lsblk -> mostra os discos
   sudo fdisk /dev/sdb
@@ -52,6 +63,11 @@ Comando uteis
   canal 2 (>)-> canal saida de erro
   | -> redirenciona pra outro comandos
   type -> verifica o tipo do arquivo
+  id -> mostra id usuario
+  who -> mostra quem iniciou o terminal
+  w -> mostra o usuario logados e os comandos executados pelo mesmo
+  sudo -i -> vai pro root iterativamente
+  last marco -> mostra ultimas vezes que foi logado na maquina
 
 UTEIS VIM
   vim nome_arquivo -> edita o arquivo e ou cria se não tiver
