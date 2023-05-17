@@ -22,6 +22,37 @@ Uteis Criação Usuario
   vipw -S -> edita o shadown
   su marco -> entra em outro usuario
 
+Uteis Permissão
+  rwxrwxrwx -> primeiro grupo de 3: dono, segundo: grupo, terceiro: outros
+  d -> diretorio
+  r -> leitura
+  w -> escrita
+  x -> execução
+  t -> somente para diretorio -> arquivos que foram criados por um usuario o outro não pode excluir
+  4 -> leitura
+  2 -> escrita
+  1 -> execucao
+  4 + 2 + 1 = 7 -> todas a permissões
+  - permissao de escrita em arquivo altera o conteudo do arquivo
+  - permissao de escrita em diretorio permite apagar e criar outros arquivos
+  chmod +w nome_arquivo -> da permissão de escrita para o arquivo proprio usuario
+  chmod +t nome_arquivo -> sticky bit
+  chmod u+w nome_arquivo -> da permissão de escrita para o proprio usuario 
+  chmod o+w nome_arquivo -> da permissão de escrita para o outros usuario 
+  chmod o-rw nome_arquivo -> tira a permissão do escrita e leitura do outros usuarios
+  chmod o-w * -> tira permissao de escrita de todos os arqvuios para outros usuarios
+  chmod g+w -> da permissão para o grupo
+  chmod ugo+rwx -> da todas a permissões para todos os usuario e grupos
+  chmod a+rwx -> da permissão pŕa todos usuario e grupos "a"(all)
+  chmod u=rw,g=r,o=w -> "="(exatamente essas permissões)
+  chmod --reference=arquivo.txt notas* -> das as mesma permissões de um arquivo para o outro
+  chmod -R o+w Documents -> da permissão para todos os arquivos dentro da pasta (recursivamente)
+  chown marco:marco arquivo -> muda o grupo e o dono do arquivo
+  chown marco -> muda o usuario
+  chown :marco -> muda o grupo
+  chown usuario arquivo (sudo chwon paulo program.c) -> troca o dono do arquivo ou diretorio
+  chown -R usuario diretorio (sudo chwon -R paulo documents) -> troca o dono do diretorio e dos arquivos dentro dele (recursivamente)
+
 Uteis Partição
   lsblk -> mostra os discos
   sudo fdisk /dev/sdb

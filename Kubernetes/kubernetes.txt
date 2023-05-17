@@ -1,0 +1,27 @@
+kubectl get nodes -> mostra os nos criados
+pod/nginx-pod created -> criar um pod
+kubectl get pods -> lista os pods existentes
+kubectl get pods -o wide -> lista os pods existentes detalhado
+kubectl get pods --watch -> acompanha o pod em tempo real
+kubectl describe pod nginx-pod -> informações sobre o pod
+kubectl edit pod nginx-pod -> editar pod
+kubectl apply -f ./primeiro-pod.yaml -> criar um pod de forma declarativo
+kubectl delete pod nginx-pod -> deleta o pod
+kubectl delete -f ./primeiro-pod.yaml -> remover tendo como base o arquivo de criação
+kubectl exec -it portal-noticias -- bash -> executar comando de forma iterativa dentro do pod
+
+SVC -> liga um pod com o outro ele tem ip fiz, dns, balenceamento de carga
+kubectl apply -f ./svc.yaml -> cria um services
+kubectl get svc -> mostra os services criados
+
+NodePort -> abre a comunição para o mundo externo
+kubectl get nodes -o wide -> mostra os nos
+no windows usar localhost + porta mostrada no comando acima
+no linux usar o ip e a porta mostrada no comando acima (internal ip)
+
+LoadBalancer -> abre a comunicação para o mundo externo usando o load balencer do provedor
+Labels são responsáveis por definir a relação Service x Pod
+Um ClusterIP funciona apenas dentro do cluster
+Um NodePort expõe Pods para dentro e fora do cluster
+Um LoadBalancer também é um NodePort e ClusterIP
+Um LoadBalancer é capaz de automaticamente utilizar um balanceador de carga de um cloud provider
