@@ -16,11 +16,22 @@ Uteis Criação Usuario
   /etc/shadown -> mostra informações de senhas do usuario
   sudo userad marco -> adiciona um usuario
   sudo passwd marco -> muda a senha de um usuario
+  sudo usermod -a -G instrutores marco -> modifica usuario adiciona(-a) group(-G)
   sudo useradd -m marco -> criar o usuario e cria o diretorio home
   sudo userdel -r marco -> apaga o usuario e deleta a pasta home
   vipw -> edita o passwd
   vipw -S -> edita o shadown
   su marco -> entra em outro usuario
+  find / -uid 1001 -delete -> apagar todos os arqvuivos do usuario 
+
+Uteis Cricao de Grupos
+  groups ou id -Gn -> mostra todos os grupos
+  cat /etc/group -> mosta os grupos extras
+  sudo groupadd -> cria grupo
+  newgrp nome_grupo -> usuario atual recebe esse grupo como principal
+  tem que logar de novo para carregar os gropos novos 
+  groupmod -> modifica um grupo 
+  groupdel -> remover um grupo
 
 Uteis Permissão
   rwxrwxrwx -> primeiro grupo de 3: dono, segundo: grupo, terceiro: outros
@@ -52,6 +63,7 @@ Uteis Permissão
   chown :marco -> muda o grupo
   chown usuario arquivo (sudo chwon paulo program.c) -> troca o dono do arquivo ou diretorio
   chown -R usuario diretorio (sudo chwon -R paulo documents) -> troca o dono do diretorio e dos arquivos dentro dele (recursivamente)
+
 
 Uteis Partição
   lsblk -> mostra os discos
