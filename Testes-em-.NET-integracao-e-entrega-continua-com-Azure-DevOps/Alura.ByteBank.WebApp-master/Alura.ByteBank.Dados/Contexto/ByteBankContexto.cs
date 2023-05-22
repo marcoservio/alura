@@ -1,10 +1,11 @@
 ﻿using Alura.ByteBank.Dominio.Entidades;
+
 using Microsoft.EntityFrameworkCore;
 
 
 namespace Alura.ByteBank.Dados.Contexto
 {
-    public class ByteBankContexto:DbContext
+    public class ByteBankContexto : DbContext
     {
         public DbSet<ContaCorrente> ContaCorrentes { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
@@ -13,15 +14,14 @@ namespace Alura.ByteBank.Dados.Contexto
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string stringconexao = "server=localhost;" +
-                                   "DataBase=bytebankBD_webapp;Uid=root;Pwd=";
-            optionsBuilder.UseMySql(stringconexao, 
+            string stringconexao = $"Server=bytebankapp.mysql.database.azure.com;UserID=marco;Password=Ma8Lez0F1Gic3Rod6;Database=bytebankdb;";
+            optionsBuilder.UseMySql(stringconexao,
                                     ServerVersion.AutoDetect(stringconexao));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+
             modelBuilder.Entity<Cliente>(entity =>
             {
                 entity.ToTable("cliente");
@@ -29,7 +29,7 @@ namespace Alura.ByteBank.Dados.Contexto
                 entity.Property(e => e.Nome).IsRequired();
                 entity.Property(e => e.Identificador);
                 entity.Property(e => e.Profissao).IsRequired();
-                entity.Property(e => e.CPF).IsRequired();               
+                entity.Property(e => e.CPF).IsRequired();
             });
 
             modelBuilder.Entity<Agencia>(entity =>
@@ -40,7 +40,7 @@ namespace Alura.ByteBank.Dados.Contexto
                 entity.Property(e => e.Endereco);
                 entity.Property(e => e.Identificador);
                 entity.Property(e => e.Nome).IsRequired();
-                
+
             });
 
             modelBuilder.Entity<ContaCorrente>(entity =>
@@ -61,7 +61,7 @@ namespace Alura.ByteBank.Dados.Contexto
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.UserName).IsRequired();
                 entity.Property(e => e.Email).IsRequired();
-                entity.Property(e => e.Senha).IsRequired();                
+                entity.Property(e => e.Senha).IsRequired();
             });
 
             base.OnModelCreating(modelBuilder);

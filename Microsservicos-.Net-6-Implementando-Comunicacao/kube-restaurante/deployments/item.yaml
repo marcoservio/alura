@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: item-deployment
+  labels:
+    app: item-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: item-api
+  template:
+    metadata:
+      labels:
+        app: item-api
+    spec:
+      containers:
+        - name: item-api
+          image: 537015156394.dkr.ecr.us-east-1.amazonaws.com/itemservice:3.0
+          ports:
+            - containerPort: 80
+          env:
+            - name: RabbitMQHost
+              value: "rabbitmq-service"
+            - name: RabbitMQPort
+              value: "5672"

@@ -16,7 +16,7 @@ namespace ItemService.RabbitMqClient
         public RabbitMqSubscriber(IConfiguration configuration, IProcessaEvento processaEvento)
         {
             _configuration = configuration;
-            _connection = new ConnectionFactory() { HostName = _configuration["RabbitMqHost"], Port = Int32.Parse(_configuration["RabbitMqPort"]) }.CreateConnection();
+            _connection = new ConnectionFactory() { HostName = _configuration["RabbitMQHost"], Port = Int32.Parse(_configuration["RabbitMQPort"]) }.CreateConnection();
             _channel = _connection.CreateModel();
             _channel.ExchangeDeclare(exchange: "trigger", type: ExchangeType.Fanout);
             _nomeDaFila = _channel.QueueDeclare().QueueName;

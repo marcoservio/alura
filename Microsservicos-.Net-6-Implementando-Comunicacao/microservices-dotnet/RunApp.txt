@@ -1,0 +1,4 @@
+docker run -d --hostname rabbitmq-service --name rabbitmq-service --network restaurante-bridge rabbitmq:3-management
+docker run --name=mysql -e MYSQL_ROOT_PASSWORD=root -d --network restaurante-bridge mysql:5.6
+docker run -d --name restaurante-service -p 12124:80 --network restaurante-bridge restauranteservice:2.5
+docker run -d --name item-service -p 12123:80 --network restaurante-bridge itemservice:2.5

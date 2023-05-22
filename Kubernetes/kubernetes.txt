@@ -8,7 +8,21 @@ kubectl edit pod nginx-pod -> editar pod
 kubectl apply -f ./primeiro-pod.yaml -> criar um pod de forma declarativo
 kubectl delete pod nginx-pod -> deleta o pod
 kubectl delete -f ./primeiro-pod.yaml -> remover tendo como base o arquivo de criação
+kubectl delete pod --all -> deleta todos os Pods
+kubectl delete svc --alll -> deleta todos os svc
 kubectl exec -it portal-noticias -- bash -> executar comando de forma iterativa dentro do pod
+kubectl apply -f sistema-configmap.yaml -> cria um configmap
+kubectl get configmap -> lista as configuração mapeadas
+kubectl describe configmap -> mostra informações
+kubectl get replicaset ou rs -> mostra os replicasets
+kubectl get rs --watch -> acompanha em tempo real as modificações
+kubectl get deployments -> mostra os deployments
+kubectl rollout history deployment nginx-deployment -> controle de versão
+kubectl annotate deployment nginx-deployment kubernetes.io/change-cause="Definindo a imagem com versão latest" -> mudar anotaçao do deployment
+kubectl rollout undo deployment nginx-deployment --to-revision=1 -> voltar pra versão anterior
+kubectl get pv -> mostra os persist volumes
+kubectl get pvc -> mostra os persist volumes clain
+kubectl port-forward pod/rabbitmq-deployment-85bf59bdfb-vlfws 15672:15672 -> fazer mapeamento da porta do pod para host para teste
 
 SVC -> liga um pod com o outro ele tem ip fiz, dns, balenceamento de carga
 kubectl apply -f ./svc.yaml -> cria um services
@@ -25,3 +39,35 @@ Um ClusterIP funciona apenas dentro do cluster
 Um NodePort expõe Pods para dentro e fora do cluster
 Um LoadBalancer também é um NodePort e ClusterIP
 Um LoadBalancer é capaz de automaticamente utilizar um balanceador de carga de um cloud provider
+
+Deploument quando criar ja criar altomaticamente o replicaSet
+
+KUBERNETES AWS
+criar o deployment
+criar o serviço para comunicação dentro do pod
+criar um usuario criar com a permissão AdministratorAccess e a chave de acesso
+logar com o usuario criado
+criar a função eks-role com a permissão AmazonEKSClusterPolicy
+criar a função eks-node-group com as permissões AmazonEC2ContainerRegistryReadOnly, AmazonEKS_CNI_Policy, AmazonEKSWorkerNodePolicy
+criar uma vpc e editar as configurações de subrede para as duas publicas Habilitar endereço IPv4 público de atribuição automática
+configurar o aws cli -> aws configure colar as chaves
+criar a eks na aws
+	escolher a função cluster criada eks-role
+	selecionar a vpc criada
+depois de criado a eks ir em computação
+	adicionar grupo de nos
+	selecionar a função de grupo de no criada eks-node-group
+	marcar so as redes publicas da vpc
+aws eks update-kubeconfig --name alura-cluster --region us-east-1
+
+subir as imagems para o container da aws ECR
+criar um repositorio pra cada imagem
+da o comando docker tag nome_imagem:2.0 537015156394.dkr.ecr.us-east-1.amazonaws.com/nome_imagem:2.0 fazer isso pra todas
+logar no docker com o ECR
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 537015156394.dkr.ecr.us-east-1.amazonaws.com
+dar um push para cada imagem
+docker push 537015156394.dkr.ecr.us-east-1.amazonaws.com/itemservice:2.5
+
+ao criar o banco na aws adicionar no grupo de seguraca o criando para o cluster
+
+criar o loadbalencer para ser acessado pelo dns gerado pela aws

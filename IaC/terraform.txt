@@ -1,0 +1,12 @@
+terraform init -> iniciar o terraform
+terraform plan -> planejamento do que vai ser executado 
+terraform apply -> aplica as alterações
+terraform destroy -> destroi a maquina
+sudo ansible-playbook playbook.yml -u ubuntu --private-key ubuntu.pem -i hosts.yml -> executar ansible rodar no wsl
+
+nohup busybox httpd -f -p 8085 & -> servidor web rapido
+. venv/bin/activate -> ativa a venv
+pip freeze -> mostra os pacotes instalados
+django-admin startproject setup . -> criar server django
+python manage.py runserver 0.0.0.0:8000 -> executar o server
+alterar dentro da pasta setup o arquivo settings.py colocar dentro do ALLOW_HOSTS '*' -> ALLOW_HOSTS = ['*']

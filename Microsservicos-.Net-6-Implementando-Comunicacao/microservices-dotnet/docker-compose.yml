@@ -19,13 +19,13 @@ services:
       - microservices-bridge
 
   itemservice:
-    image: itemservice:2.5
+    image: itemservice:3.0
     restart: always
     container_name: item-service
     networks:
       - microservices-bridge
     ports:
-      - 12123:80
+      - 12126:80
     depends_on:
       - mysql
       - rabbitmq
@@ -37,7 +37,7 @@ services:
     networks:
       - microservices-bridge
     ports:
-      - 12124:80
+      - 12127:80
     depends_on:
       - mysql
       - rabbitmq
