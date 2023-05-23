@@ -42,6 +42,14 @@ Um LoadBalancer é capaz de automaticamente utilizar um balanceador de carga de 
 
 Deploument quando criar ja criar altomaticamente o replicaSet
 
+LivenessProbes são para saber se a aplicação está saudável e/ou se deve ser reiniciada, enquanto ReadinessProbes são para saber se a aplicação já está pronta para receber requisições depois de iniciar
+
+padrão para criação
+	deployment criar um livenessProbe e uma readinessProbe para testar se a aplicação esta funcionado dentro do pod se não estiver ele reiniciar o pod
+	service para conectar os deployment em um node (ClusterIP para conexão interna no node) (NodePort para acesso externo)
+	ConfigMap para armazenar variaveis de ambiente
+	StatefulSet criar para persistência de arquivo mas criar antes um PersistentVolumeClaim
+
 KUBERNETES AWS
 criar o deployment
 criar o serviço para comunicação dentro do pod
