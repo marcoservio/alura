@@ -1,0 +1,32 @@
+<Project DefaultTargets="Compile">
+
+	<PropertyGroup>
+		<ArquivoSaida>bin\Financas.exe</ArquivoSaida>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<Arquivos Include="**\*.cs" />
+	</ItemGroup>
+	
+	<Target Name="Inicio" BeforeTargets="Compile">
+		<Message Text="Início da execução do script de compilação..."/>
+	</Target>
+	
+	<Target Name="Fim" AfterTargets="Compile">
+		<Message Text="Término da execução do script de compilação..."/>
+	</Target>
+	
+	<Target Name="Clean">
+		<Delete Files="$(ArquivoSaida)" />
+		<RemoveDir Directories="bin" />
+	</Target>
+	
+	<Target Name="Compile">
+		<MakeDir Directories="bin" />
+		<Csc Sources="@(Arquivos)" OutputAssembly="$(ArquivoSaida)" />
+	</Target>
+	
+	<Target Name="Recompile" DependsOnTargets="Clean;Compile">
+	</Target>
+
+</Project>
