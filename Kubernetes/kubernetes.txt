@@ -23,6 +23,7 @@ kubectl rollout undo deployment nginx-deployment --to-revision=1 -> voltar pra v
 kubectl get pv -> mostra os persist volumes
 kubectl get pvc -> mostra os persist volumes clain
 kubectl port-forward pod/rabbitmq-deployment-85bf59bdfb-vlfws 15672:15672 -> fazer mapeamento da porta do pod para host para teste
+kubectl get hpa
 
 SVC -> liga um pod com o outro ele tem ip fiz, dns, balenceamento de carga
 kubectl apply -f ./svc.yaml -> cria um services
@@ -44,6 +45,11 @@ Deploument quando criar ja criar altomaticamente o replicaSet
 
 LivenessProbes são para saber se a aplicação está saudável e/ou se deve ser reiniciada, enquanto ReadinessProbes são para saber se a aplicação já está pronta para receber requisições depois de iniciar
 
+Além do HorizontalPodAutoscaler, o Kubernetes possui um recurso customizado chamado VerticalPodAutoscaler. 
+O VerticalPodAutoscaler remove a necessidade de definir limites e pedidos por recursos do sistema, como cpu e memória.
+Quando definido, ele define os consumos de maneira automática baseada na utilização em cada um dos nós, além disso, 
+quanto tem disponível ainda de recurso.
+
 padrão para criação
 	deployment criar um livenessProbe e uma readinessProbe para testar se a aplicação esta funcionado dentro do pod se não estiver ele reiniciar o pod
 	service para conectar os deployment em um node (ClusterIP para conexão interna no node) (NodePort para acesso externo)
@@ -53,6 +59,8 @@ padrão para criação
 KUBERNETES AWS
 criar o deployment
 criar o serviço para comunicação dentro do pod
+criar um HPA(HorizontalPodAutoscaler) para escalar pods automaticamente para o deployment
+	baixar arquivo para configurar metricas https://github.com/kubernetes-sigs/metrics-server
 criar um usuario criar com a permissão AdministratorAccess e a chave de acesso
 logar com o usuario criado
 criar a função eks-role com a permissão AmazonEKSClusterPolicy
