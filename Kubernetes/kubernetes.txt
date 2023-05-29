@@ -24,6 +24,8 @@ kubectl get pv -> mostra os persist volumes
 kubectl get pvc -> mostra os persist volumes clain
 kubectl port-forward pod/rabbitmq-deployment-85bf59bdfb-vlfws 15672:15672 -> fazer mapeamento da porta do pod para host para teste
 kubectl get hpa
+kubectl scale --replicas=5 deployment nginx -> aumentar o numero de replicas em uma linha em um deployment
+kubectl expose deploy nginx --port=80 --type=LoadBalancer -> criar loadbalance para expor na porta 80 com uma linha
 
 SVC -> liga um pod com o outro ele tem ip fiz, dns, balenceamento de carga
 kubectl apply -f ./svc.yaml -> cria um services

@@ -1,0 +1,5 @@
+Criar o projeto
+ativar a api google container registry api
+docker tag webapp gcr.io/lab-gke-387814/webapp
+docker push gcr.io/lab-gke-387814/webapp
+ativar a api Kubernetes Engine API

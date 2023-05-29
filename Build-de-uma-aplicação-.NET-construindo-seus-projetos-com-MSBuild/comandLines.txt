@@ -1,0 +1,41 @@
+csc -> compila a aplicação
+criar pasta bin
+csc -out:bin\Program.exe .\Program.cs
+csc -out:bin\Tarefas.exe ListaTarefas.cs Tarefa.cs Categoria.cs -> compilar com dependencias de outras classes
+msbild -> compila arquivo csproj
+msbuild -v:detailed -> executa com mais detalhes 
+msbuild -t:Inicio -> executa um target definido
+msbuild -t:Recompile -p:ArquivoSaida=bin\Relatorio.exe -> colocar valor para a propriedade ao executar o comando a ultima que foi declarada que conta
+
+msbuild -t:Restore -> restaura os pacotes para o msbuild sem parametro funcionar 
+
+dotnet build
+dotnet clean
+dotnet run
+dotnet new 
+
+Tasks: unidade de execução
+Targets: conjunto de tarefas
+Items: coleção de elementos (em geral arquivos) que serão utilizados pelas tarefas do script.
+Properties: permitem reutilizarmos valores em várias partes do script
+
+
+Build Incremental
+O processo de compilação pode ser realizado em projetos com centenas de classes. 
+Para tornar esse processo mais otimizado o compilador verifica quais arquivos foram 
+modificados desde a compilação anterior e compila somente esse conjunto. A compilação 
+anterior é guardada na pasta obj. A pasta bin é o resultado final do processo, 
+onde todos os arquivos são linkados em pacotes.
+
+Configurações
+Um desenvolvedor compila seus arquivos com dois grandes objetivos: 
+o primeiro é testar seu código no dia a dia, verificando a corretude de suas regras, 
+algoritmos, lógicas. O segundo é entregar sua aplicação para terceiros a utilizarem. 
+Esses dois objetivos são representados no processo de compilação por configurações e chamadas de Debug e Release.
+
+Frameworks de destino
+Todo código .NET se utiliza de uma biblioteca com classes comuns a todos os projetos, 
+por exemplo DateTime e Console usadas por nós nesse curso. Contudo, existem diferentes 
+versões dessa biblioteca e você precisa indicar para qual seu projeto vai se destinar. 
+A propriedade obrigatória TargetFramework é usada para isso. Durante a compilação o 
+SDK cria um diretório para separar os arquivos compilados nos diferentes frameworks.

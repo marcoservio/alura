@@ -1,34 +1,3 @@
-<Project DefaultTargets="Compile">
-    <PropertyGroup>
-        <ArquivoSaida>bin\Tarefas.exe</ArquivoSaida>
-    </PropertyGroup>
-    <PropertyGroup>
-        <ArquivoSaida>bin\Program.exe</ArquivoSaida>
-    </PropertyGroup>
-    <ItemGroup>
-        <Arquivos Include="**\*.cs" Exclude="**\Program.cs" />
-    </ItemGroup>
-    <Target Name="PropriedadesReservadas">
-        <Message Text="$(MsBuildProjectFile)" />
-        <Message Text="$(MsBuildStartupDirectory)" />
-    </Target>
-    <Target Name="ArquivoParaCompilar">
-        <Message Text="@(Arquivos)" />
-    </Target>
-    <Target Name="Inicio" BeforeTargets="Compile">
-        <Message Text="Inicio da execução do script de compitação..." />
-    </Target>
-    <Target Name="Fim" AfterTargets="Compile">
-        <Message Text="Termino da execução do script de compitação..." />
-    </Target>
-    <Target Name="Clean">
-        <Delete Files="$(ArquivoSaida)" />
-        <RemoveDir Directories="bin" />
-    </Target>
-    <Target Name="Compile">
-        <MakeDir Directories="bin" />
-        <Csc Sources="@(Arquivos)" OutputAssembly="$(ArquivoSaida)" />
-    </Target>
-    <Target Name="Recompile" DependsOnTargets="Clean;Compile">
-    </Target>
+<Project>
+    <Import Project="..\shared\Comum.targets" />
 </Project>
