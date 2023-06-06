@@ -58,6 +58,9 @@ padrão para criação
 	ConfigMap para armazenar variaveis de ambiente
 	StatefulSet criar para persistência de arquivo mas criar antes um PersistentVolumeClaim
 
+escalar horizontal -> numero de pods
+escalar vertical -> capacidade maquina
+
 KUBERNETES AWS
 criar o deployment
 criar o serviço para comunicação dentro do pod
@@ -89,3 +92,10 @@ docker push 537015156394.dkr.ecr.us-east-1.amazonaws.com/itemservice:2.5
 ao criar o banco na aws adicionar no grupo de seguraca o criando para o cluster
 
 criar o loadbalencer para ser acessado pelo dns gerado pela aws
+
+
+GCloud
+	docker tag webapp:v1 gcr.io/lab-gke-387814/webapp:v1
+	docker push gcr.io/lab-gke-387814/webapp:v3
+
+	hey -z 5m http://35.196.230.191/ -> server stress
