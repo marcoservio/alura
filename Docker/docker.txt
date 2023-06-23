@@ -1,5 +1,6 @@
 docker pull -> baixa os containers
 docker run -> executa os containers
+docker stats id_container -> mostra infos sobre o container. (memoria, cpu e etc)
 docker ps -> mostra os containers em execução
 docker container ls -a -> mostra os containers que ja foram executados (docker ps -a)
 docker run ubuntu sleep 1d -> executa o comando depois de um dia

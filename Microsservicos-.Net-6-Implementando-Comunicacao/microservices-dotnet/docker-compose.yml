@@ -17,6 +17,8 @@ services:
     hostname: rabbitmq-service
     networks:
       - microservices-bridge
+    depends_on:
+      - mysql
 
   itemservice:
     image: itemservice:3.0
@@ -27,7 +29,6 @@ services:
     ports:
       - 12126:80
     depends_on:
-      - mysql
       - rabbitmq
 
   restauranteservice:
@@ -39,8 +40,8 @@ services:
     ports:
       - 12127:80
     depends_on:
-      - mysql
-      - rabbitmq
+      - itemservice
+    
 
 networks:
   microservices-bridge:

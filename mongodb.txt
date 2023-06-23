@@ -1,0 +1,134 @@
+mongosh -> entra no shell do mongo
+use -> cria um banco de dados e ja usa ele 
+db.createCollection("series") -> criar coleção
+db.nome_colecao.drop() -> remover uma coleção
+db.dropDatabase() -> remover um banco de dados -> entrar no banco que ira ser removido
+
+db.series.insertOne({
+"Série": "Fleabag",
+        "Ano de lançamento": 2016,
+        "Temporadas disponíveis": 2,
+        "Linguagem": "Inglês",
+        "IMDb Avaliação": 8.7}) -> inserir um documento
+		
+db.series.insertMany([{"Série": "Made in Heaven","Temporadas disponíveis": 1,"Linguagem": "Hindi","Genero": ["Drama"],"IMDb Avaliação": 8.3,"Classificação": "18+"},{"Série": "Homecoming","Temporadas disponíveis": 2,"Linguagem": "Inglês","Genero": ["Drama"],"IMDb Avaliação": 7.5,"Classificação": "16+"}]) -> inserir mais de um documentos
+
+db.series.find() -> lista todos os documentos 
+db.series.find({"Ano de lançamento": 2018})
+db.series.find({},{"Série": 1, "Ano de lançamento": 1, "_id": 0}) -> project
+db.series.find({"Ano de lançamento": {$in: [2019, 2020]}})
+db.series.find().limit(5)
+db.series.find().sort({"Série": 1})
+db.series.find({"Temporadas disponíveis": {$gte: 4}})
+db.series.find({"Ano de lançamento": {$ne: 2020}}) -> todos documentos menos os que tem 2020
+db.series.find({"Genero": {$all: ["Ação", "Comédia"]}})
+
+db.series.updateOne({"Série": "Grimn"},{$set: {"Temporadas disponíveis": 6}}) -> caso o campo não exista e cria o campo
+db.series.updateMany({"Série": {$in: ["Four More Shots Please", "Fleabag"]}},{$set: {"Classificação": "18+"}})
+
+db.series.deleteOne({"Série":"The Boys"})
+db.series.deleteMany({"Temporadas disponíveis":1})
+db.series.deleteMany() -> remove todos os documentos da coleção
+
+Project
+	{Série: 1, Linguagem: 1, _id: 0} -> 1 para mostrar o campo na consulta e 0 não mostra
+
+Sort
+	{Série: 1} -> 1 para order crescente, -1 para ordem decrescente
+
+{$or: [{"Ano de lançamento": 2018},{"Classificação": "18+"}]}
+{$and: [{"Ano de lançamento": 2018},{"Classificação": "18+"}]}
+{$nor: [{"Ano de lançamento": 2018},{"Classificação": "18+"}]} -> not
+{"Ano de lançamento": {$in: [2019, 2020]}}
+{"Temporadas disponíveis": {$gt: 2}} -> maior que
+{"Temporadas disponíveis": {$gte: 2}} -> maior igaul que
+{"Temporadas disponíveis": {$lt: 2}} -> menos que
+{"Temporadas disponíveis": {$lte: 2}} -> menor igual que
+
+
+FILTER: utilizado para especificar qual será a condição que os documentos devem atender para serem retornados na busca.
+
+PROJECT: utilizado para especificar quais campos serão ou não retornados na consulta.
+
+Ao Informar o nome do campo e informar 0, todos os campos, exceto os campos especificados no campo project, são retornados. Se o campo receber o valor de 1, ele será retornado na consulta. O campo _id é retornado por padrão, a menos que este seja especificado no campo project e definido como 0.
+SORT: especifica a ordem de classificação dos documentos retornados.
+
+Para especificar a ordem crescente de um campo, defina o campo como 1.
+Para especificar a ordem decrescente de um campo, defina o campo como -1.
+MAX TIME MS: define o limite de tempo cumulativo em milissegundos para processar as operações da barra de consulta. Se o limite de tempo for atingido antes da conclusão da operação, o Compass interrompe a operação.
+
+COLLATION: utilizado para especificar regras específicas do idioma para comparação de textos, como regras para letras maiúsculas ou minúsculas, acentos, entre outros.
+
+SKIP: especifica quantos documentos devem ser ignorados antes de retornar o conjunto de resultados.
+
+LIMIT: especifica o número máximo de documentos a serem retornados.
+
+NoSQLBooster
+
+f5 para executar tudo
+f6 executa o script selecionado
+
+db.getCollectionInfos({name:"clientes"}) ou db.runCommand({listCollections: 1, filter:{name: "contas"}}) -> mostrar validações para cada coleção
+db.runCommand({listCollections: 2}) -> mostra de duas coleções
+
+Criar coleção validador de campos 
+db.createCollection("clientes", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["nome", "cpf", "status_civil", "data_nascimento", "endereco"],
+            properties: {
+                nome: {
+                    bsonType: "string",
+                    description: "Informe corretamento o nome do cliente"  
+                },
+                cpf: {
+                    bsonType: "string",
+                    description: "Informe corretamento o cpf do cliente"  
+                },
+                status_civil: {
+                    bsonType: "string",
+                    enum: ["Solteiro(a)", "Casado(a)", "Separado(a)", "Divorciado(a)", "Viúvo(a)"],
+                    description: "Informe corretamento o status_civil do cliente"
+                },
+                data_nascimento: {
+                    bsonType: "string",
+                    description: "Informe corretamento o data de nascimento do cliente"  
+                },
+                endereco: {
+                    bsonType: "string",
+                    description: "Informe corretamento o endereco do cliente"  
+                }
+            }
+        }
+    }
+})
+
+
+Para localizar e modificar documentos inválidos armazenados nas coleções, podemos utilizar o operador $jsonSchema e realizar a busca com base em um esquema.
+
+O primeiro passo é definir um objeto de esquema e armazená-lo em uma variável.
+
+Para criar uma variável, você pode utilizar o comando let:
+
+let nome_variavel = $jsonSchema
+
+Então, vamos criar uma variável que armazenará o esquema da coleção de clientes:
+
+let clientes = 
+ {  
+	esquema validador
+ } 
+
+
+OBS.: Para realizar a criação de uma variável, é necessário utilizar a linha de comando.
+
+Após executar o comando e criar a variável, você pode utilizá-la como um filtro para buscar, modificar e remover documentos das coleções.
+
+Buscando documentos que correspondem ao esquema de validação
+
+db.clientes.find(contas)
+
+Buscando documentos que não correspondem ao esquema de validação.
+
+db.clientes.find( { $nor: [ contas ] } )

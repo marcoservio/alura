@@ -1,0 +1,12 @@
+chmod 600 /home/marcoservio/.kube/config -> erro de permisão
+
+helm create -> criar chart
+helm lint pasta-helm -> verificar se tem algum erro
+helm template past-helm -> verificar o templete com as variaveis passadas
+helm install name-chart pasta-helm -> name-chart esta no arquivo chart.yaml
+helm install -n namespace name-chart pasta-helm -> instala usando um namespace
+helm upgrade <nome_do_release> <diretório_do_chart> -> atualiza com novas com as novas alterações feitas
+helm uninstall past-helm -> desistalar um chart
+helm list -> mostra todos os charts rodando
+helm list -n namespace -> mostra todos os charts rodando no namespace
+helm status <nome_do_release> -> informações detalhadas do release

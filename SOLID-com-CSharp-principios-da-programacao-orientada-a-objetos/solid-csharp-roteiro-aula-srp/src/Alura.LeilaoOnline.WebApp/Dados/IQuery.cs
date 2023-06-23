@@ -4,7 +4,7 @@ namespace Alura.LeilaoOnline.WebApp.Dados
 {
     public interface IQuery<T>
     {
-        IEnumerable<T> BuscarTodos();
+        IEnumerable<T> Listar();
         T BuscarPorId(int id);
     }
 }

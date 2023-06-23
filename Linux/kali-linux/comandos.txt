@@ -626,6 +626,10 @@ Colhendo informações
     john --show /root/johns_passwd  -> mostrar a senhas quebradas
     hydra -L logins.txt -P senhas.txt -t 4 192.168.100.72 ssh  
     crunch 8 8 -t senha%%% 0123456789 > senhas.txt -> gera wordlist
+  
+  Criando senha com engenharia social
+    cupp -1 e seguir os passos
+
 
   Google Hacking
     "Intitle"
