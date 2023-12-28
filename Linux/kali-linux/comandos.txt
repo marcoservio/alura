@@ -497,6 +497,13 @@ Metasploit - Armitage
     log = client.sys.eventlog.open('file replication service')
     Log.clear
 
+Metasploit full scan page
+	load wamp
+	wmap_sites -a http://192.168.100.157
+	wmap_targets -t http://192.168.100.157/bWAPP
+	wmap_targets -t -> lista tudos os exploits que vai ser executado
+	wmap_targets -e -> executa todos os exploit
+
 VEIL
   apt install veil
   veil
@@ -630,6 +637,7 @@ Colhendo informações
   Criando senha com engenharia social
     cupp -1 e seguir os passos
 
+  Baixar Setoolkit para clonar pagina e fazer engenharia social https://github.com/trustedsec/social-engineer-toolkit
 
   Google Hacking
     "Intitle"

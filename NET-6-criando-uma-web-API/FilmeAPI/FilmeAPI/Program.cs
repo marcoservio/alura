@@ -8,6 +8,7 @@ using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("FilmeConnection");
+var teste = builder.Configuration["Teste:teste"];
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

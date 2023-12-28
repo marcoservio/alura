@@ -1,4 +1,4 @@
-terraform init -> iniciar o terraform
+terraform init -> iniciar o terraform (dentro da pasta do main.tf)
 terraform plan -> planejamento do que vai ser executado 
 terraform apply -> aplica as alterações
 terraform destroy -> destroi a maquina
@@ -10,3 +10,13 @@ pip freeze -> mostra os pacotes instalados
 django-admin startproject setup . -> criar server django
 python manage.py runserver 0.0.0.0:8000 -> executar o server
 alterar dentro da pasta setup o arquivo settings.py colocar dentro do ALLOW_HOSTS '*' -> ALLOW_HOSTS = ['*']
+
+
+
+
+ # user_data     = <<-EOF
+  #                    #!/bin/bash
+  #                    cd /home/ubuntu
+  #                    echo "<h1>Feito com Terraform</h1>" > index.html
+  #                    nohup busybox httpd -f -p 8080 &
+  #                    EOF
