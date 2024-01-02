@@ -1,0 +1,12 @@
+python -m venv venv
+executar o arquivo activate.bat
+deactivate -> desativa a venv
+instalar as libs normal com o pip para o ambiente
+pip freeze -> listar tudo que tem no ambiente
+pip freeze > requirements.txt -> copiar os pacotes para o arquivo txt
+
+fastAPI
+pip install fastapi
+pit install uvicorn
+uvicorn -> criar um servidor para acessar os endpoints criado
+uvicorn main:app --reload --port 5000 -> comando para executar o servidor
