@@ -1,0 +1,13 @@
+pip install pytest
+pip install pytest-cov
+
+pasta tem que ser test tem que criar um arquivo __init__.py arquivos e metodos tem que começar com test_.
+nome de class TestNomeClasse
+
+pytest -v -> rodas os testes
+pytest --cov=modelos tests/ --cov-report term-missing -> verificar linhas sem cobertura de codigo
+
+pytest --cov=modelos tests/ --cov-report html -> exportar para html
+
+pytest --junitxml report.xml -> relatorio em xml
+pytest --cov-report xml -> coverage xml

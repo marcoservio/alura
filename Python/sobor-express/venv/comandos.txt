@@ -4,6 +4,7 @@ deactivate -> desativa a venv
 instalar as libs normal com o pip para o ambiente
 pip freeze -> listar tudo que tem no ambiente
 pip freeze > requirements.txt -> copiar os pacotes para o arquivo txt
+pip install -r requirements.txt
 
 fastAPI
 pip install fastapi

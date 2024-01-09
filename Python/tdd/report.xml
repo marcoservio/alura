@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite name="pytest" errors="0" failures="0" skipped="0" tests="5" time="0.142"
+        timestamp="2024-01-08T20:32:54.026019" hostname="DESKTOP-42OQODB">
+        <testcase classname="tests.test_bytebank.TestFuncionario"
+            name="test_quando_idade_recebe_13_03_2000_deve_retornar_o_valor_22" time="0.003" />
+        <testcase classname="tests.test_bytebank.TestFuncionario"
+            name="test_quando_sobrenome_recebe_Marco_Servio_deve_retornar_apenas_Servio"
+            time="0.002" />
+        <testcase classname="tests.test_bytebank.TestFuncionario"
+            name="test_quando_decrescimo_salario_recebe_100000_deve_retornar_90000" time="0.001" />
+        <testcase classname="tests.test_bytebank.TestFuncionario"
+            name="test_quando_calcular_bonus_recebe_1000_deve_retornar_100" time="0.001" />
+        <testcase classname="tests.test_bytebank.TestFuncionario"
+            name="test_quando_calcular_bonus_recebe_1000000_deve_retornar_exception" time="0.001" />
+    </testsuite>
+</testsuites>
