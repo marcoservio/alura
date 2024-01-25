@@ -1,0 +1,23 @@
+pip install -r requirements.txt -> instala todas as dependencias
+
+django-admin help
+
+django-admin startproject setup . -> criar projeto
+python manage.py startapp nome_app -> crira funcionalidade
+
+python manage.py runserver -> subir servidor
+
+python manage.py collectstatic -> puxar os styles
+
+python .\manage.py makemigrations -> criar migration tem que criar primeiro a classe no arquivos models do app
+
+python .\manage.py migrate -> aplicar migraçoes
+
+python .\manage.py shell -> shell interativa django
+
+foto = Fotografia(nome="Nebulosa de Carina", legenda="webbtelecope.org / NASA / James Webb", descricao="Foto", foto="carina-nebula.png") 
+>>> foto.save() -> salvar no banco
+>>> Fotografia.objects.all() -> listar dados banco
+
+
+python .\manage.py createsuperuser -> criar conta django admin

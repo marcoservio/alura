@@ -638,6 +638,8 @@ Colhendo informações
     cupp -1 e seguir os passos
 
   Baixar Setoolkit para clonar pagina e fazer engenharia social https://github.com/trustedsec/social-engineer-toolkit
+  
+  Ataque Man in the midle usar mitmf --arp --spoof --target ip_alvo --gateway gateway -i eth0 --dns
 
   Google Hacking
     "Intitle"
