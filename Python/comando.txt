@@ -1,4 +1,10 @@
+criar documentação (swagger e redoc) da api baixar o drf_yasg e seguir o projeto aluraflix 
+
 pip install -r requirements.txt -> instala todas as dependencias
+
+pip install --upgrade django -> atualizar uma dependencia
+
+Get-Content requirements.txt | ForEach-Object { $_ -replace '==.*', '' } | ForEach-Object { pip install --upgrade $_ } -> atualizar todas as dependencias
 
 django-admin help
 
@@ -15,9 +21,66 @@ python .\manage.py migrate -> aplicar migraçoes
 
 python .\manage.py shell -> shell interativa django
 
+python manage.py test -> executar todos os tests
+
 foto = Fotografia(nome="Nebulosa de Carina", legenda="webbtelecope.org / NASA / James Webb", descricao="Foto", foto="carina-nebula.png") 
 >>> foto.save() -> salvar no banco
 >>> Fotografia.objects.all() -> listar dados banco
 
+python .\manage.py loaddata programas_iniciais.json -> carregar dados dentro da pasta fixtures
 
 python .\manage.py createsuperuser -> criar conta django admin
+
+Remover um app
+  remover app dentro do settings (installed_apps)
+  remover todas as migrações, tudo relacionado vinculadas ao app
+  deletar o banco
+  criar banco com o mesmo nome  
+  rodar a migração novamente
+  criar novamente o superuser
+
+FAZER DEPLOY NA AWS
+
+    pip freeze > requeriments.txt
+
+    criar repositorio do git
+    git init
+    git add .
+    git commit -m "Adicionando projeto"
+    
+    criar repositorio no github
+    git remote add origin url-do-repositorio
+    git push origin master
+    criar um brach de deploy no github
+    abrir a pasta de setup ir em settings.py editar arquivo modificar ALLOWED_HOSTS para ALLOWED_HOSTS = ["*"] commita as alterações
+
+    criando uma instancia na aws
+    criar uma ec2 criar par de chaves (rsa, .pem) guardar em um lugar seguro no computador
+    conectar a instancia pela aws
+    sudo apt update
+    sudo apt upgrade
+    git clone url-do-repositorio-criado-anteriormente
+    entrar na pasta do projeto
+    trocar a branch
+    git checkout deploy
+    sudo apt install python-venv
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt caso erro instalar as bibliotecas mais atualizadas
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+    python3 manage.py createsuperuser 
+     - liberar a porta 8000 pela aws na aba de segurança, grupos de segurança, regras de entrada, editar regras, adicionar regra, colocar
+       porta 8000 escolher ip 0.0.0.0
+    python3 populate_script.py
+    python3 manage.py runserver 0.0.0.0:8000
+
+    colocar para executar a aplicação em segundo plano
+    conectar na instancia
+    screen -list
+    entrar na pasta da aplicacao
+    screen -S nome_pasta_aplicacao
+    source venv/bin/activate
+    python3 manage.py runserver 0.0.0.0:8000
+
+    
